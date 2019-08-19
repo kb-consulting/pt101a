@@ -318,7 +318,7 @@ Wire Wire Line
 Wire Wire Line
 	10000 5050 10000 4550
 Wire Wire Line
-	9300 5250 9500 5250
+	9300 5250 9700 5250
 Connection ~ 10000 4550
 Wire Wire Line
 	9500 5050 9300 5050
@@ -440,16 +440,14 @@ F 3 "DOCUMENTATION" H 8550 1600 50  0001 C CNN
 $EndComp
 Text HLabel 9500 1250 2    60   Input ~ 0
 GSCLK
-Text HLabel 9500 5250 2    60   Input ~ 0
+Text HLabel 9700 5250 2    60   Input ~ 0
 GSCLK
 Text HLabel 9400 4850 0    60   Input ~ 0
 VCC
 Text HLabel 9400 850  0    60   Input ~ 0
 VCC
-Text HLabel 9500 5350 2    60   Input ~ 0
+Text HLabel 9700 5350 2    60   Input ~ 0
 SOUT
-Wire Wire Line
-	9300 5350 9500 5350
 Wire Wire Line
 	4450 2200 4450 2300
 Wire Wire Line
@@ -2454,4 +2452,18 @@ F 3 "~" H 1550 6300 50  0001 C CNN
 	1    1550 6300
 	-1   0    0    1   
 $EndComp
+Text Label 4750 1400 0    50   ~ 0
+SOUT1
+Text Label 4750 3650 0    50   ~ 0
+SOUT2
+Text Label 4850 6000 0    50   ~ 0
+SOUT3
+Text Label 10350 1350 0    50   ~ 0
+SOUT4
+Text Label 10350 3350 0    50   ~ 0
+SOUT5
+Text Label 9350 5350 0    50   ~ 0
+SOUT6
+Wire Wire Line
+	9300 5350 9700 5350
 $EndSCHEMATC
