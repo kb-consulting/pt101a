@@ -9,4 +9,5 @@
 *.kicad_pcb-bak
 libraries/*.bak
 libraries/*.bck
+rescue-backup/
 output/

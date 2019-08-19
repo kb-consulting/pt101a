@@ -1,4 +1,4 @@
-129995752501179
+131562888097825
 Air_Coils_SML_NEOSID
 Neosid_Air-Coil_SML_1turn_HDM0131A
 
@@ -48201,3 +48201,10 @@ SolderWirePad_single_SMD_5x10mm
 0
 0
 0
+tca_footprints
+VLDx1232G
+Diode, Small Outline Diode (SOD); 2.30 mm L X 2.30 mm W X 3.02 mm H body
+
+0
+2
+2

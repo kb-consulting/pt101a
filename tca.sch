@@ -738,7 +738,7 @@ Wire Wire Line
 	3150 2050 4000 2050
 Wire Wire Line
 	3350 2550 4000 2550
-Text Notes 6600 1550 0    50   ~ 0
-TODO:\nAdd anotation text\nFix ERCs\nChange LED\nSort out libraries\nAdd BOM info to design\nSort out versioning
+Text Notes 6900 1850 0    50   ~ 0
+TODO:\nAdd anotation text\nFix ERCs\nSet better layout design rules, change via size\nFix DRCs\nImprove layout thermals\nChange LED\nSort out libraries\nAdd BOM info to design\nSort out versioning\nNAME nets to make easier!\nrestructure firmware
 NoConn ~ 6800 3500
 $EndSCHEMATC
