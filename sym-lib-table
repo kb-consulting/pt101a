@@ -1,4 +1,3 @@
 (sym_lib_table
   (lib (name tca-rescue)(type Legacy)(uri ${KIPRJMOD}/tca-rescue.lib)(options "")(descr ""))
-  (lib (name myParts)(type Legacy)(uri ${KIPRJMOD}/libraries/myParts.lib)(options "")(descr ""))
 )

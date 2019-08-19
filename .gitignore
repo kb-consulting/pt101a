@@ -5,6 +5,7 @@
 *.net
 *.dsn
 *.ses
+*.sch-bak
 *.kicad_pcb-bak
 libraries/*.bak
 libraries/*.bck

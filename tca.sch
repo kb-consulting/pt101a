@@ -1,37 +1,6 @@
-EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:special
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:myParts
+EESchema Schematic File Version 4
 LIBS:tca-cache
-EELAYER 27 0
+EELAYER 30 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
@@ -62,7 +31,7 @@ MOSI
 Text Label 4000 1950 0    60   ~ 0
 SS
 $Comp
-L GND #PWR01
+L tca-rescue:GND #PWR01
 U 1 1 5358B074
 P 2450 2800
 F 0 "#PWR01" H 2450 2800 30  0001 C CNN
@@ -73,7 +42,7 @@ F 3 "" H 2450 2800 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SD_CARD U1
+L tca-rescue:SD_CARD U1
 U 1 1 5358AEF9
 P 1950 2050
 F 0 "U1" H 1700 1750 60  0000 C CNN
@@ -84,7 +53,7 @@ F 3 "" H 1950 2050 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C5
+L tca-rescue:C C5
 U 1 1 535704C8
 P 3300 6600
 F 0 "C5" H 3300 6700 40  0000 L CNN
@@ -95,7 +64,7 @@ F 3 "~" H 3300 6600 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C3
+L tca-rescue:C C3
 U 1 1 535704B9
 P 1550 6600
 F 0 "C3" H 1550 6700 40  0000 L CNN
@@ -106,7 +75,7 @@ F 3 "~" H 1550 6600 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LD1117S50 U2
+L tca-rescue:LD1117S50 U2
 U 1 1 5357046B
 P 2850 6400
 F 0 "U2" H 3000 6204 60  0000 C CNN
@@ -123,7 +92,7 @@ FIN
 Text Label 3700 6550 0    60   ~ 0
 ERR
 $Comp
-L R R_FIN1
+L tca-rescue:R R_FIN1
 U 1 1 5356ED9C
 P 4150 6850
 F 0 "R_FIN1" V 4230 6850 40  0000 C CNN
@@ -134,7 +103,7 @@ F 3 "~" H 4150 6850 30  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R R_ERR1
+L tca-rescue:R R_ERR1
 U 1 1 5356ED8D
 P 4150 6550
 F 0 "R_ERR1" V 4230 6550 40  0000 C CNN
@@ -145,7 +114,7 @@ F 3 "~" H 4150 6550 30  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R R_ON1
+L tca-rescue:R R_ON1
 U 1 1 5356ED7E
 P 4150 6250
 F 0 "R_ON1" V 4230 6250 40  0000 C CNN
@@ -160,7 +129,7 @@ FIN
 Text Label 3350 4650 0    60   ~ 0
 ERR
 $Comp
-L LED FIN1
+L tca-rescue:LED FIN1
 U 1 1 5356E78D
 P 4750 6850
 F 0 "FIN1" H 4750 6950 50  0000 C CNN
@@ -171,7 +140,7 @@ F 3 "~" H 4750 6850 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED ERR1
+L tca-rescue:LED ERR1
 U 1 1 5356E77E
 P 4750 6550
 F 0 "ERR1" H 4750 6650 50  0000 C CNN
@@ -182,7 +151,7 @@ F 3 "~" H 4750 6550 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED ON1
+L tca-rescue:LED ON1
 U 1 1 5356E76F
 P 4750 6250
 F 0 "ON1" H 4750 6350 50  0000 C CNN
@@ -193,7 +162,7 @@ F 3 "~" H 4750 6250 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR02
+L tca-rescue:GND #PWR02
 U 1 1 5356E577
 P 5100 7300
 F 0 "#PWR02" H 5100 7300 30  0001 C CNN
@@ -206,7 +175,7 @@ $EndComp
 Text Label 4000 7200 0    60   ~ 0
 RST
 $Comp
-L SW_PUSH RESET1
+L tca-rescue:SW_PUSH RESET1
 U 1 1 5356E35F
 P 4550 7200
 F 0 "RESET1" H 4700 7310 50  0000 C CNN
@@ -221,7 +190,7 @@ RST
 Text Label 4850 7600 0    60   ~ 0
 VCC
 $Comp
-L GND #PWR03
+L tca-rescue:GND #PWR03
 U 1 1 52166F83
 P 4300 4400
 F 0 "#PWR03" H 4300 4400 30  0001 C CNN
@@ -232,7 +201,7 @@ F 3 "" H 4300 4400 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L RESONATEUR Y1
+L tca-rescue:RESONATEUR Y1
 U 1 1 52166DFA
 P 4050 4300
 F 0 "Y1" H 4070 4500 60  0000 C CNN
@@ -261,7 +230,7 @@ Text Label 1300 3300 2    60   ~ 0
 VCC
 NoConn ~ 1350 4000
 $Comp
-L C C2
+L tca-rescue:C C2
 U 1 1 52150FEA
 P 1050 3700
 F 0 "C2" H 1050 3800 40  0000 L CNN
@@ -272,7 +241,7 @@ F 3 "~" H 1050 3700 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L C C1
+L tca-rescue:C C1
 U 1 1 52150FDD
 P 1050 3500
 F 0 "C1" H 1050 3600 40  0000 L CNN
@@ -283,7 +252,7 @@ F 3 "~" H 1050 3500 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L GND #PWR04
+L tca-rescue:GND #PWR04
 U 1 1 52150FBD
 P 800 5850
 F 0 "#PWR04" H 800 5850 30  0001 C CNN
@@ -294,7 +263,7 @@ F 3 "" H 800 5850 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ATMEGA328-A IC1
+L tca-rescue:ATMEGA328-A IC1
 U 1 1 52150E25
 P 2250 4500
 F 0 "IC1" H 1500 5750 40  0000 L BNN
@@ -315,7 +284,7 @@ SIN
 Text Label 3500 3700 0    60   ~ 0
 MOSI
 $Comp
-L R R1
+L tca-rescue:R R1
 U 1 1 5214E00C
 P 4500 7600
 F 0 "R1" V 4580 7600 40  0000 C CNN
@@ -330,7 +299,7 @@ MISO
 Text Label 5050 5100 2    60   ~ 0
 VCC
 $Comp
-L GND #PWR05
+L tca-rescue:GND #PWR05
 U 1 1 5214D884
 P 5050 5650
 F 0 "#PWR05" H 5050 5650 30  0001 C CNN
@@ -349,7 +318,7 @@ SCK
 Text Label 4150 5350 2    60   ~ 0
 MISO
 $Comp
-L GND #PWR06
+L tca-rescue:GND #PWR06
 U 1 1 5214D369
 P 1250 6850
 F 0 "#PWR06" H 1250 6850 30  0001 C CNN
@@ -362,7 +331,7 @@ $EndComp
 Text Label 3450 6350 0    60   ~ 0
 VCC
 $Comp
-L CONN_2 P1
+L tca-rescue:CONN_2 P1
 U 1 1 5213FDDC
 P 800 6600
 F 0 "P1" V 750 6600 40  0000 C CNN
@@ -373,7 +342,7 @@ F 3 "" H 800 6600 60  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L CONN_3X2 P2
+L tca-rescue:CONN_3X2 P2
 U 1 1 5213FCAA
 P 4550 5500
 F 0 "P2" H 4550 5750 50  0000 C CNN
@@ -399,7 +368,7 @@ F9 "VCC" I R 9050 3250 60
 F10 "SOUT" I L 6800 3500 60 
 $EndSheet
 $Comp
-L R R2
+L tca-rescue:R R2
 U 1 1 5363149A
 P 6150 2900
 F 0 "R2" V 6230 2900 40  0000 C CNN
@@ -458,7 +427,7 @@ F9 "VCC" I R 9050 5050 60
 F10 "SOUT" I L 6800 5300 60 
 $EndSheet
 $Comp
-L INDUCTOR L1
+L tca-rescue:INDUCTOR L1
 U 1 1 53AA01D0
 P 1900 6350
 F 0 "L1" V 1850 6350 40  0000 C CNN
@@ -469,7 +438,7 @@ F 3 "~" H 1900 6350 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L C C4
+L tca-rescue:C C4
 U 1 1 53AA0322
 P 2250 6600
 F 0 "C4" H 2250 6700 40  0000 L CNN
@@ -494,18 +463,18 @@ Wire Wire Line
 Wire Wire Line
 	3250 3600 3500 3600
 Wire Wire Line
-	2350 2550 4000 2550
+	2350 2550 3350 2550
 Wire Wire Line
 	2350 2350 4000 2350
 Wire Wire Line
-	2350 2050 4000 2050
+	2350 2050 3150 2050
 Wire Wire Line
-	2350 1950 4000 1950
+	2350 1950 2950 1950
 Wire Wire Line
 	3300 6400 3300 6350
 Connection ~ 3300 6350
 Wire Wire Line
-	3250 6350 3450 6350
+	3250 6350 3300 6350
 Connection ~ 2850 6800
 Wire Wire Line
 	2850 6800 2850 6650
@@ -515,17 +484,17 @@ Wire Wire Line
 	1550 6400 1550 6350
 Connection ~ 1250 6500
 Wire Wire Line
-	1450 6350 1600 6350
+	1450 6350 1550 6350
 Wire Wire Line
 	1450 6500 1450 6350
 Wire Wire Line
-	1250 6700 1250 6850
+	1250 6700 1250 6800
 Wire Wire Line
 	1150 6700 1250 6700
 Wire Wire Line
 	1250 6500 1250 6350
 Wire Wire Line
-	1150 6500 1450 6500
+	1150 6500 1250 6500
 Wire Wire Line
 	4750 7600 4850 7600
 Connection ~ 4200 7200
@@ -549,7 +518,7 @@ Connection ~ 5100 6550
 Wire Wire Line
 	4950 6550 5100 6550
 Wire Wire Line
-	5100 6250 5100 7300
+	5100 6250 5100 6550
 Wire Wire Line
 	4950 6250 5100 6250
 Wire Wire Line
@@ -565,7 +534,7 @@ Wire Wire Line
 Wire Wire Line
 	3350 4650 3250 4650
 Wire Wire Line
-	4000 7200 4250 7200
+	4000 7200 4200 7200
 Wire Wire Line
 	3250 5300 3500 5300
 Wire Wire Line
@@ -600,15 +569,15 @@ Connection ~ 1300 3400
 Connection ~ 1300 3700
 Connection ~ 1300 3500
 Wire Wire Line
-	1250 3700 1350 3700
+	1250 3700 1300 3700
 Wire Wire Line
-	1300 3300 1300 3700
+	1300 3300 1300 3400
 Wire Wire Line
 	1350 3400 1300 3400
 Wire Wire Line
-	1250 3500 1350 3500
+	1250 3500 1300 3500
 Wire Wire Line
-	800  3500 800  5850
+	800  3500 800  3700
 Wire Wire Line
 	800  5500 1350 5500
 Wire Wire Line
@@ -622,7 +591,7 @@ Wire Wire Line
 Wire Wire Line
 	6150 2650 6150 2550
 Wire Wire Line
-	5950 3200 6800 3200
+	5950 3200 6150 3200
 Wire Wire Line
 	6800 2600 6650 2600
 Wire Wire Line
@@ -661,22 +630,21 @@ Wire Wire Line
 	6150 3150 6150 3200
 Connection ~ 6150 3200
 Wire Wire Line
-	2200 6350 2450 6350
+	2200 6350 2250 6350
 Wire Wire Line
 	2250 6400 2250 6350
 Connection ~ 2250 6350
 Wire Wire Line
-	1250 6800 3300 6800
+	1250 6800 1550 6800
 Connection ~ 1550 6800
 Connection ~ 2250 6800
 Wire Wire Line
-	2450 2150 2450 2800
-Connection ~ 2450 2150
+	2450 2150 2450 2450
 Connection ~ 2450 2450
 Wire Wire Line
 	2450 2150 2350 2150
 $Comp
-L R R15
+L tca-rescue:R R15
 U 1 1 53AA1B37
 P 2750 1400
 F 0 "R15" V 2830 1400 40  0000 C CNN
@@ -687,7 +655,7 @@ F 3 "~" H 2750 1400 30  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R16
+L tca-rescue:R R16
 U 1 1 53AA1B5A
 P 2950 1400
 F 0 "R16" V 3030 1400 40  0000 C CNN
@@ -698,7 +666,7 @@ F 3 "~" H 2950 1400 30  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R17
+L tca-rescue:R R17
 U 1 1 53AA1B60
 P 3150 1400
 F 0 "R17" V 3230 1400 40  0000 C CNN
@@ -709,7 +677,7 @@ F 3 "~" H 3150 1400 30  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R18
+L tca-rescue:R R18
 U 1 1 53AA1B66
 P 3350 1400
 F 0 "R18" V 3430 1400 40  0000 C CNN
@@ -720,7 +688,7 @@ F 3 "~" H 3350 1400 30  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R19
+L tca-rescue:R R19
 U 1 1 53AA1B6C
 P 3550 1400
 F 0 "R19" V 3630 1400 40  0000 C CNN
@@ -735,7 +703,7 @@ Connection ~ 3150 1150
 Connection ~ 2950 1150
 Connection ~ 2750 1150
 Wire Wire Line
-	2550 1150 3550 1150
+	2550 1150 2750 1150
 Connection ~ 2550 1150
 Wire Wire Line
 	2750 1650 2750 1850
@@ -744,7 +712,7 @@ Wire Wire Line
 Wire Wire Line
 	2750 1850 2350 1850
 Wire Wire Line
-	2550 1050 2550 2250
+	2550 1050 2550 1150
 Wire Wire Line
 	2550 2250 2350 2250
 Wire Wire Line
@@ -760,4 +728,64 @@ Wire Wire Line
 	2350 2650 3550 2650
 Wire Wire Line
 	3550 2650 3550 1650
+Wire Wire Line
+	800  5700 800  5850
+Wire Wire Line
+	800  5600 800  5700
+Wire Wire Line
+	3300 6350 3450 6350
+Wire Wire Line
+	2850 6800 3300 6800
+Wire Wire Line
+	1250 6800 1250 6850
+Wire Wire Line
+	1550 6350 1600 6350
+Wire Wire Line
+	1250 6500 1450 6500
+Wire Wire Line
+	4200 7200 4250 7200
+Wire Wire Line
+	5100 7200 5100 7300
+Wire Wire Line
+	5100 6850 5100 7200
+Wire Wire Line
+	5100 6550 5100 6850
+Wire Wire Line
+	800  3700 800  5500
+Wire Wire Line
+	800  5500 800  5600
+Wire Wire Line
+	1300 3400 1300 3500
+Wire Wire Line
+	1300 3700 1350 3700
+Wire Wire Line
+	1300 3500 1350 3500
+Wire Wire Line
+	1300 3500 1300 3700
+Wire Wire Line
+	6150 3200 6800 3200
+Wire Wire Line
+	2250 6350 2450 6350
+Wire Wire Line
+	1550 6800 2250 6800
+Wire Wire Line
+	2250 6800 2850 6800
+Wire Wire Line
+	2450 2450 2450 2800
+Wire Wire Line
+	3350 1150 3550 1150
+Wire Wire Line
+	3150 1150 3350 1150
+Wire Wire Line
+	2950 1150 3150 1150
+Wire Wire Line
+	2750 1150 2950 1150
+Wire Wire Line
+	2550 1150 2550 2250
+Wire Wire Line
+	2950 1950 4000 1950
+Wire Wire Line
+	3150 2050 4000 2050
+Wire Wire Line
+	3350 2550 4000 2550
 $EndSCHEMATC
