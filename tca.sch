@@ -58,7 +58,7 @@ U 1 1 535704C8
 P 3950 4500
 F 0 "C5" H 3950 4600 40  0000 L CNN
 F 1 "10uF" H 3956 4415 40  0000 L CNN
-F 2 "SM0805" H 3988 4350 30  0001 C CNN
+F 2 "Capacitors_SMD:C_1206" H 3988 4350 30  0001 C CNN
 F 3 "~" H 3950 4500 60  0000 C CNN
 	1    3950 4500
 	1    0    0    -1  
@@ -97,7 +97,7 @@ U 1 1 5356ED9C
 P 4050 6800
 F 0 "R_FIN1" V 4130 6800 40  0000 C CNN
 F 1 "330" V 4057 6801 40  0000 C CNN
-F 2 "SM0805" V 3980 6800 30  0001 C CNN
+F 2 "Resistors_SMD:R_0805" V 3980 6800 30  0001 C CNN
 F 3 "~" H 4050 6800 30  0000 C CNN
 	1    4050 6800
 	0    -1   -1   0   
@@ -108,7 +108,7 @@ U 1 1 5356ED8D
 P 4050 6500
 F 0 "R_ERR1" V 4130 6500 40  0000 C CNN
 F 1 "330" V 4057 6501 40  0000 C CNN
-F 2 "SM0805" V 3980 6500 30  0001 C CNN
+F 2 "Resistors_SMD:R_0805" V 3980 6500 30  0001 C CNN
 F 3 "~" H 4050 6500 30  0000 C CNN
 	1    4050 6500
 	0    -1   -1   0   
@@ -119,7 +119,7 @@ U 1 1 5356ED7E
 P 4050 6200
 F 0 "R_ON1" V 4130 6200 40  0000 C CNN
 F 1 "330" V 4057 6201 40  0000 C CNN
-F 2 "SM0805" V 3980 6200 30  0001 C CNN
+F 2 "Resistors_SMD:R_0805" V 3980 6200 30  0001 C CNN
 F 3 "~" H 4050 6200 30  0000 C CNN
 	1    4050 6200
 	0    -1   -1   0   
@@ -235,7 +235,7 @@ U 1 1 52150FEA
 P 6500 4150
 F 0 "C2" H 6500 4250 40  0000 L CNN
 F 1 "0.1 uF" H 6506 4065 40  0000 L CNN
-F 2 "SM0805" H 6538 4000 30  0001 C CNN
+F 2 "Capacitors_SMD:C_0805" H 6538 4000 30  0001 C CNN
 F 3 "~" H 6500 4150 60  0000 C CNN
 	1    6500 4150
 	0    -1   -1   0   
@@ -246,7 +246,7 @@ U 1 1 52150FDD
 P 6500 3950
 F 0 "C1" H 6500 4050 40  0000 L CNN
 F 1 "0.1 uF" H 6506 3865 40  0000 L CNN
-F 2 "SM0805" H 6538 3800 30  0001 C CNN
+F 2 "Capacitors_SMD:C_0805" H 6538 3800 30  0001 C CNN
 F 3 "~" H 6500 3950 60  0000 C CNN
 	1    6500 3950
 	0    -1   -1   0   
@@ -289,7 +289,7 @@ U 1 1 5214E00C
 P 4400 7550
 F 0 "R1" V 4480 7550 40  0000 C CNN
 F 1 "10K" V 4407 7551 40  0000 C CNN
-F 2 "SM0805" V 4330 7550 30  0001 C CNN
+F 2 "Resistors_SMD:R_0805" V 4330 7550 30  0001 C CNN
 F 3 "~" H 4400 7550 30  0000 C CNN
 	1    4400 7550
 	0    -1   -1   0   
@@ -373,7 +373,7 @@ U 1 1 5363149A
 P 6300 1750
 F 0 "R2" V 6380 1750 40  0000 C CNN
 F 1 "10K" V 6307 1751 40  0000 C CNN
-F 2 "SM0805" V 6230 1750 30  0001 C CNN
+F 2 "Resistors_SMD:R_0805" V 6230 1750 30  0001 C CNN
 F 3 "~" H 6300 1750 30  0000 C CNN
 	1    6300 1750
 	-1   0    0    1   
@@ -442,7 +442,6 @@ Wire Wire Line
 	2750 1800 3350 1800
 Wire Wire Line
 	3950 4300 3950 4250
-Connection ~ 3950 4250
 Wire Wire Line
 	3900 4250 3950 4250
 Connection ~ 3500 4700
@@ -599,7 +598,7 @@ U 1 1 53AA1B37
 P 3150 1250
 F 0 "R15" V 3230 1250 40  0000 C CNN
 F 1 "50k" V 3157 1251 40  0000 C CNN
-F 2 "SM0805" V 3080 1250 30  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 3080 1250 30  0000 C CNN
 F 3 "~" H 3150 1250 30  0000 C CNN
 	1    3150 1250
 	1    0    0    -1  
@@ -610,7 +609,7 @@ U 1 1 53AA1B5A
 P 3350 1250
 F 0 "R16" V 3430 1250 40  0000 C CNN
 F 1 "50k" V 3357 1251 40  0000 C CNN
-F 2 "SM0805" V 3280 1250 30  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 3280 1250 30  0000 C CNN
 F 3 "~" H 3350 1250 30  0000 C CNN
 	1    3350 1250
 	1    0    0    -1  
@@ -621,7 +620,7 @@ U 1 1 53AA1B60
 P 3550 1250
 F 0 "R17" V 3630 1250 40  0000 C CNN
 F 1 "50k" V 3557 1251 40  0000 C CNN
-F 2 "SM0805" V 3480 1250 30  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 3480 1250 30  0000 C CNN
 F 3 "~" H 3550 1250 30  0000 C CNN
 	1    3550 1250
 	1    0    0    -1  
@@ -632,7 +631,7 @@ U 1 1 53AA1B66
 P 3750 1250
 F 0 "R18" V 3830 1250 40  0000 C CNN
 F 1 "50k" V 3757 1251 40  0000 C CNN
-F 2 "SM0805" V 3680 1250 30  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 3680 1250 30  0000 C CNN
 F 3 "~" H 3750 1250 30  0000 C CNN
 	1    3750 1250
 	1    0    0    -1  
@@ -643,7 +642,7 @@ U 1 1 53AA1B6C
 P 3950 1250
 F 0 "R19" V 4030 1250 40  0000 C CNN
 F 1 "50k" V 3957 1251 40  0000 C CNN
-F 2 "SM0805" V 3880 1250 30  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 3880 1250 30  0000 C CNN
 F 3 "~" H 3950 1250 30  0000 C CNN
 	1    3950 1250
 	1    0    0    -1  
@@ -682,8 +681,6 @@ Wire Wire Line
 	6250 6150 6250 6300
 Wire Wire Line
 	6250 6050 6250 6150
-Wire Wire Line
-	3950 4250 4100 4250
 Wire Wire Line
 	3500 4700 3950 4700
 Wire Wire Line
@@ -738,8 +735,6 @@ Wire Wire Line
 	3550 1900 4400 1900
 Wire Wire Line
 	3750 2400 4400 2400
-Text Notes 4400 3850 0    50   ~ 0
-TODO major:\nSet better layout design rules, change via size\nImprove layout thermals incl driver footprints & heatsink space\nrestructure firmware\n\nTODO minor:\nAdd anotation text\nSort out libraries\nAdd BOM info to design\nSort out versioning\nNAME nets to make easier!\nFix DRCs\nFix ERCs
 NoConn ~ 6950 2350
 Text Notes 1700 5700 0    59   ~ 12
 Programming Header
@@ -765,4 +760,9 @@ Text Notes 3650 5350 0    59   ~ 12
 Status & Reset
 Text Notes 3650 5800 0    50   ~ 0
 RESET1 - Switch to reset processor\nON1 - LED, lit when running\nERR1 - LED, lit if error\nFIN1 - LED, lit once finished\n(LED behaviour is software dependant)
+Text Notes 4400 3850 0    50   ~ 0
+TODO major:\nImprove layout thermals incl driver footprints & heatsink space\nrestructure firmware\n\nTODO minor:\nAdd annotation text\nSort out libraries\nAdd BOM info to design (+ choose new part for C5)\nNAME nets to make easier!\nFix DRCs\nFix ERCs
+Wire Wire Line
+	3950 4250 4100 4250
+Connection ~ 3950 4250
 $EndSCHEMATC
