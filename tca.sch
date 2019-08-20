@@ -96,7 +96,7 @@ L tca-rescue:R R_FIN1
 U 1 1 5356ED9C
 P 4050 6800
 F 0 "R_FIN1" V 4130 6800 40  0000 C CNN
-F 1 "330" V 4057 6801 40  0000 C CNN
+F 1 "330" V 3950 6800 40  0000 C CNN
 F 2 "Resistors_SMD:R_0805" V 3980 6800 30  0001 C CNN
 F 3 "~" H 4050 6800 30  0000 C CNN
 	1    4050 6800
@@ -107,7 +107,7 @@ L tca-rescue:R R_ERR1
 U 1 1 5356ED8D
 P 4050 6500
 F 0 "R_ERR1" V 4130 6500 40  0000 C CNN
-F 1 "330" V 4057 6501 40  0000 C CNN
+F 1 "330" V 3950 6500 40  0000 C CNN
 F 2 "Resistors_SMD:R_0805" V 3980 6500 30  0001 C CNN
 F 3 "~" H 4050 6500 30  0000 C CNN
 	1    4050 6500
@@ -118,7 +118,7 @@ L tca-rescue:R R_ON1
 U 1 1 5356ED7E
 P 4050 6200
 F 0 "R_ON1" V 4130 6200 40  0000 C CNN
-F 1 "330" V 4057 6201 40  0000 C CNN
+F 1 "330" V 3950 6200 40  0000 C CNN
 F 2 "Resistors_SMD:R_0805" V 3980 6200 30  0001 C CNN
 F 3 "~" H 4050 6200 30  0000 C CNN
 	1    4050 6200
@@ -128,39 +128,6 @@ Text Label 8800 5200 0    60   ~ 0
 FIN
 Text Label 8800 5100 0    60   ~ 0
 ERR
-$Comp
-L tca-rescue:LED FIN1
-U 1 1 5356E78D
-P 4650 6800
-F 0 "FIN1" H 4650 6900 50  0000 C CNN
-F 1 "LED" H 4650 6700 50  0000 C CNN
-F 2 "SM0805" H 4650 6800 60  0001 C CNN
-F 3 "~" H 4650 6800 60  0000 C CNN
-	1    4650 6800
-	1    0    0    -1  
-$EndComp
-$Comp
-L tca-rescue:LED ERR1
-U 1 1 5356E77E
-P 4650 6500
-F 0 "ERR1" H 4650 6600 50  0000 C CNN
-F 1 "LED" H 4650 6400 50  0000 C CNN
-F 2 "SM0805" H 4650 6500 60  0001 C CNN
-F 3 "~" H 4650 6500 60  0000 C CNN
-	1    4650 6500
-	1    0    0    -1  
-$EndComp
-$Comp
-L tca-rescue:LED ON1
-U 1 1 5356E76F
-P 4650 6200
-F 0 "ON1" H 4650 6300 50  0000 C CNN
-F 1 "LED" H 4650 6100 50  0000 C CNN
-F 2 "SM0805" H 4650 6200 60  0001 C CNN
-F 3 "~" H 4650 6200 60  0000 C CNN
-	1    4650 6200
-	1    0    0    -1  
-$EndComp
 $Comp
 L tca-rescue:GND #PWR02
 U 1 1 5356E577
@@ -288,7 +255,7 @@ L tca-rescue:R R1
 U 1 1 5214E00C
 P 4400 7550
 F 0 "R1" V 4480 7550 40  0000 C CNN
-F 1 "10K" V 4407 7551 40  0000 C CNN
+F 1 "10K" V 4300 7550 40  0000 C CNN
 F 2 "Resistors_SMD:R_0805" V 4330 7550 30  0001 C CNN
 F 3 "~" H 4400 7550 30  0000 C CNN
 	1    4400 7550
@@ -481,15 +448,9 @@ Connection ~ 5000 7150
 Wire Wire Line
 	5000 7150 4750 7150
 Connection ~ 5000 6800
-Wire Wire Line
-	5000 6800 4850 6800
 Connection ~ 5000 6500
 Wire Wire Line
-	4850 6500 5000 6500
-Wire Wire Line
 	5000 6200 5000 6500
-Wire Wire Line
-	4850 6200 5000 6200
 Wire Wire Line
 	4300 6800 4450 6800
 Wire Wire Line
@@ -598,7 +559,7 @@ U 1 1 53AA1B37
 P 3150 1250
 F 0 "R15" V 3230 1250 40  0000 C CNN
 F 1 "50k" V 3157 1251 40  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 3080 1250 30  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 3080 1250 30  0001 C CNN
 F 3 "~" H 3150 1250 30  0000 C CNN
 	1    3150 1250
 	1    0    0    -1  
@@ -609,7 +570,7 @@ U 1 1 53AA1B5A
 P 3350 1250
 F 0 "R16" V 3430 1250 40  0000 C CNN
 F 1 "50k" V 3357 1251 40  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 3280 1250 30  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 3280 1250 30  0001 C CNN
 F 3 "~" H 3350 1250 30  0000 C CNN
 	1    3350 1250
 	1    0    0    -1  
@@ -620,7 +581,7 @@ U 1 1 53AA1B60
 P 3550 1250
 F 0 "R17" V 3630 1250 40  0000 C CNN
 F 1 "50k" V 3557 1251 40  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 3480 1250 30  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 3480 1250 30  0001 C CNN
 F 3 "~" H 3550 1250 30  0000 C CNN
 	1    3550 1250
 	1    0    0    -1  
@@ -631,7 +592,7 @@ U 1 1 53AA1B66
 P 3750 1250
 F 0 "R18" V 3830 1250 40  0000 C CNN
 F 1 "50k" V 3757 1251 40  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 3680 1250 30  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 3680 1250 30  0001 C CNN
 F 3 "~" H 3750 1250 30  0000 C CNN
 	1    3750 1250
 	1    0    0    -1  
@@ -642,7 +603,7 @@ U 1 1 53AA1B6C
 P 3950 1250
 F 0 "R19" V 4030 1250 40  0000 C CNN
 F 1 "50k" V 3957 1251 40  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 3880 1250 30  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 3880 1250 30  0001 C CNN
 F 3 "~" H 3950 1250 30  0000 C CNN
 	1    3950 1250
 	1    0    0    -1  
@@ -759,10 +720,49 @@ For ...?
 Text Notes 3650 5350 0    59   ~ 12
 Status & Reset
 Text Notes 3650 5800 0    50   ~ 0
-RESET1 - Switch to reset processor\nON1 - LED, lit when running\nERR1 - LED, lit if error\nFIN1 - LED, lit once finished\n(LED behaviour is software dependant)
+RESET1 - Switch to reset processor\nON1 - LED, lit when running\nERR1 - LED, lit if error\nFIN1 - LED, lit once finished\n(LED behaviour software dependant)
 Text Notes 4400 3850 0    50   ~ 0
-TODO major:\nImprove layout thermals incl driver footprints & heatsink space\nrestructure firmware\ncheck if filled copper causes any issues (keepout notch for processor? SD card?)\n\nTODO minor:\nAdd annotation text\nSort out libraries\nAdd BOM info to design (+ choose new part for C5)\nNAME nets to make easier!\nFix DRCs\nFix ERCs
+TODO major:\nrestructure firmware\ncheck if filled copper causes any issues (keepout notch for processor? SD card?)\n\nTODO minor:\nAdd annotation text\nSort out libraries\nAdd BOM info to design (+ choose new part for C5)\nNAME nets to make easier!\nFix DRCs\nFix ERCs
 Wire Wire Line
 	3950 4250 4100 4250
 Connection ~ 3950 4250
+$Comp
+L Device:LED_ALT ON1
+U 1 1 5D5F29EB
+P 4600 6200
+F 0 "ON1" H 4600 6100 50  0000 C CNN
+F 1 "LED_ALT" H 4593 6036 50  0001 C CNN
+F 2 "LEDs:LED_0805" H 4600 6200 50  0001 C CNN
+F 3 "~" H 4600 6200 50  0001 C CNN
+	1    4600 6200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4750 6200 5000 6200
+$Comp
+L Device:LED_ALT ERR1
+U 1 1 5D5FCE11
+P 4600 6500
+F 0 "ERR1" H 4600 6400 50  0000 C CNN
+F 1 "LED_ALT" H 4593 6336 50  0001 C CNN
+F 2 "LEDs:LED_0805" H 4600 6500 50  0001 C CNN
+F 3 "~" H 4600 6500 50  0001 C CNN
+	1    4600 6500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED_ALT FIN1
+U 1 1 5D5FD6BB
+P 4600 6800
+F 0 "FIN1" H 4600 6700 50  0000 C CNN
+F 1 "LED_ALT" H 4593 6636 50  0001 C CNN
+F 2 "LEDs:LED_0805" H 4600 6800 50  0001 C CNN
+F 3 "~" H 4600 6800 50  0001 C CNN
+	1    4600 6800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4750 6500 5000 6500
+Wire Wire Line
+	4750 6800 5000 6800
 $EndSCHEMATC
