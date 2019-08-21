@@ -1,5 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:tca-cache
+LIBS:lpa96-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -79,8 +79,6 @@ Wire Wire Line
 	3750 3650 5200 3650
 Connection ~ 3850 5600
 Wire Wire Line
-	3850 5500 3850 5600
-Wire Wire Line
 	3850 5800 3750 5800
 Wire Wire Line
 	4450 5700 4450 5200
@@ -107,8 +105,6 @@ Wire Wire Line
 Wire Wire Line
 	5200 1400 3750 1400
 Connection ~ 3850 3250
-Wire Wire Line
-	3850 3150 3850 3250
 Wire Wire Line
 	3850 3450 3750 3450
 Wire Wire Line
@@ -160,17 +156,6 @@ F 3 "~" H 4200 5700 30  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C C8
-U 1 1 53630180
-P 4050 5400
-F 0 "C8" H 4050 5500 40  0000 L CNN
-F 1 "100nF" H 4056 5315 40  0000 L CNN
-F 2 "Capacitors_SMD:C_0805" H 4088 5250 30  0001 C CNN
-F 3 "~" H 4050 5400 60  0000 C CNN
-	1    4050 5400
-	-1   0    0    1   
-$EndComp
-$Comp
 L lpa96_symbols:TLC5941 U4
 U 1 1 536301A0
 P 3000 3900
@@ -192,17 +177,6 @@ F 2 "Resistors_SMD:R_0805" V 4130 3350 30  0001 C CNN
 F 3 "~" H 4200 3350 30  0000 C CNN
 	1    4200 3350
 	0    1    1    0   
-$EndComp
-$Comp
-L Device:C C7
-U 1 1 53AA0807
-P 4050 3050
-F 0 "C7" H 4050 3150 40  0000 L CNN
-F 1 "100nF" H 4056 2965 40  0000 L CNN
-F 2 "Capacitors_SMD:C_0805" H 4088 2900 30  0001 C CNN
-F 3 "~" H 4050 3050 60  0000 C CNN
-	1    4050 3050
-	-1   0    0    1   
 $EndComp
 NoConn ~ 3750 1500
 $Comp
@@ -228,17 +202,6 @@ F 3 "~" H 4200 1100 30  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C C6
-U 1 1 53630972
-P 4050 800
-F 0 "C6" H 4050 900 40  0000 L CNN
-F 1 "100nF" H 4056 715 40  0000 L CNN
-F 2 "Capacitors_SMD:C_0805" H 4088 650 30  0001 C CNN
-F 3 "~" H 4050 800 60  0000 C CNN
-	1    4050 800 
-	-1   0    0    1   
-$EndComp
-$Comp
 L lpa96_symbols:TLC5941 U3
 U 1 1 53630973
 P 3000 1650
@@ -255,14 +218,8 @@ Text HLabel 3950 3550 2    60   Input ~ 0
 GSCLK
 Text HLabel 3950 5900 2    60   Input ~ 0
 GSCLK
-Text HLabel 3850 5500 0    60   Input ~ 0
-VCC
-Text HLabel 3850 3150 0    60   Input ~ 0
-VCC
 Text HLabel 4500 1500 2    60   Input ~ 0
 VIN
-Text HLabel 3800 850  0    60   Input ~ 0
-VCC
 Text HLabel 1250 1500 0    60   Input ~ 0
 VIN
 Wire Wire Line
@@ -270,8 +227,6 @@ Wire Wire Line
 Wire Wire Line
 	3750 6000 5800 6000
 Connection ~ 9400 4950
-Wire Wire Line
-	9400 4850 9400 4950
 Wire Wire Line
 	9400 5150 9300 5150
 Wire Wire Line
@@ -290,8 +245,6 @@ Wire Wire Line
 Wire Wire Line
 	9400 1150 9300 1150
 Connection ~ 9400 950 
-Wire Wire Line
-	9400 850  9400 950 
 Wire Wire Line
 	10000 1050 10000 550 
 Wire Wire Line
@@ -326,17 +279,6 @@ F 3 "~" H 9750 5050 30  0000 C CNN
 	1    9750 5050
 	0    1    1    0   
 $EndComp
-$Comp
-L Device:C C11
-U 1 1 53630EAA
-P 9600 4750
-F 0 "C11" H 9600 4850 40  0000 L CNN
-F 1 "100nF" H 9606 4665 40  0000 L CNN
-F 2 "Capacitors_SMD:C_0805" H 9638 4600 30  0001 C CNN
-F 3 "~" H 9600 4750 60  0000 C CNN
-	1    9600 4750
-	-1   0    0    1   
-$EndComp
 NoConn ~ 9300 1450
 $Comp
 L Device:R R6
@@ -348,17 +290,6 @@ F 2 "Resistors_SMD:R_0805" V 9680 1050 30  0001 C CNN
 F 3 "~" H 9750 1050 30  0000 C CNN
 	1    9750 1050
 	0    1    1    0   
-$EndComp
-$Comp
-L Device:C C9
-U 1 1 53630EE2
-P 9600 750
-F 0 "C9" H 9600 850 40  0000 L CNN
-F 1 "100nF" H 9606 665 40  0000 L CNN
-F 2 "Capacitors_SMD:C_0805" H 9638 600 30  0001 C CNN
-F 3 "~" H 9600 750 60  0000 C CNN
-	1    9600 750 
-	-1   0    0    1   
 $EndComp
 $Comp
 L lpa96_symbols:TLC5941 U6
@@ -375,10 +306,6 @@ Text HLabel 9500 1250 2    60   Input ~ 0
 GSCLK
 Text HLabel 9700 5250 2    60   Input ~ 0
 GSCLK
-Text HLabel 9400 4850 0    60   Input ~ 0
-VCC
-Text HLabel 9400 850  0    60   Input ~ 0
-VCC
 Text HLabel 9700 5350 2    60   Input ~ 0
 SOUT
 Wire Wire Line
@@ -655,10 +582,6 @@ Wire Wire Line
 	2250 1500 2100 1500
 Wire Wire Line
 	2100 1100 2250 1100
-Wire Wire Line
-	3800 850  3850 850 
-Wire Wire Line
-	3850 850  3850 1000
 Wire Wire Line
 	1300 4550 1400 4550
 Wire Wire Line
@@ -1014,8 +937,6 @@ Wire Wire Line
 Text HLabel 1250 6100 0    60   Input ~ 0
 VIN
 Wire Wire Line
-	2050 5600 2250 5600
-Wire Wire Line
 	1300 6800 1300 6900
 Wire Wire Line
 	1300 6700 1300 6800
@@ -1288,21 +1209,8 @@ Wire Wire Line
 	9400 2950 9600 2950
 Wire Wire Line
 	9400 2950 9400 3150
-Text HLabel 9400 2850 0    60   Input ~ 0
-VCC
 Text HLabel 9500 3250 2    60   Input ~ 0
 GSCLK
-$Comp
-L Device:C C10
-U 1 1 53630EC9
-P 9600 2750
-F 0 "C10" H 9600 2850 40  0000 L CNN
-F 1 "100nF" H 9606 2665 40  0000 L CNN
-F 2 "Capacitors_SMD:C_0805" H 9638 2600 30  0001 C CNN
-F 3 "~" H 9600 2750 60  0000 C CNN
-	1    9600 2750
-	-1   0    0    1   
-$EndComp
 $Comp
 L Device:R R7
 U 1 1 53630EC3
@@ -1315,17 +1223,6 @@ F 3 "~" H 9750 3050 30  0000 C CNN
 	0    1    1    0   
 $EndComp
 NoConn ~ 9300 3450
-$Comp
-L lpa96_symbols:TLC5941 U7
-U 1 1 53630EB0
-P 8550 3600
-F 0 "U7" H 8550 3500 50  0000 C CNN
-F 1 "TLC5941" H 8550 3700 50  0000 C CNN
-F 2 "lpa96_footprints:TLC5941_PWP_28" H 8550 3600 50  0001 C CNN
-F 3 "DOCUMENTATION" H 8550 3600 50  0001 C CNN
-	1    8550 3600
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	9600 2550 10000 2550
 Wire Wire Line
@@ -1337,8 +1234,6 @@ Wire Wire Line
 	10000 3050 10000 2550
 Wire Wire Line
 	9400 3150 9300 3150
-Wire Wire Line
-	9400 2850 9400 2950
 Connection ~ 9400 2950
 Wire Wire Line
 	9300 3350 10750 3350
@@ -2416,10 +2311,6 @@ F 3 "" H 2150 7050 50  0001 C CNN
 	1    2150 7050
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2250 7000 2150 7000
-Wire Wire Line
-	2150 7050 2150 7000
 $Comp
 L power:GND #PWR0105
 U 1 1 5D80D19F
@@ -2431,10 +2322,6 @@ F 3 "" H 7700 2400 50  0001 C CNN
 	1    7700 2400
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7800 2350 7700 2350
-Wire Wire Line
-	7700 2400 7700 2350
 $Comp
 L power:GND #PWR0106
 U 1 1 5D842CB1
@@ -2491,10 +2378,6 @@ F 3 "" H 5750 7100 50  0001 C CNN
 	1    5750 7100
 	1    0    0    -1  
 $EndComp
-Text HLabel 5700 6550 0    60   Input ~ 0
-VCC
-Wire Wire Line
-	5700 6550 5750 6550
 $Comp
 L power:GND #PWR0114
 U 1 1 5D810AF3
@@ -2586,9 +2469,7 @@ Wire Wire Line
 Wire Wire Line
 	9300 1050 9600 1050
 Wire Wire Line
-	5750 7000 5750 7100
-Wire Wire Line
-	5750 6550 5750 6700
+	5750 7000 5750 7050
 Wire Wire Line
 	4050 5200 4050 5250
 Wire Wire Line
@@ -2624,4 +2505,210 @@ F 3 "" H 2050 5600 60  0000 C CNN
 	1    2050 5600
 	0    1    1    0   
 $EndComp
+Wire Wire Line
+	2250 5600 2050 5600
+Wire Wire Line
+	2150 7050 2150 7000
+Wire Wire Line
+	2150 7000 2250 7000
+Wire Wire Line
+	7700 2400 7700 2350
+Wire Wire Line
+	7700 2350 7800 2350
+Text HLabel 5500 7050 0    50   Input ~ 0
+GND
+Wire Wire Line
+	5500 7050 5750 7050
+Connection ~ 5750 7050
+Wire Wire Line
+	5750 7050 5750 7100
+$Comp
+L lpa96_symbols:TLC5941 U7
+U 1 1 53630EB0
+P 8550 3600
+F 0 "U7" H 8550 3500 50  0000 C CNN
+F 1 "TLC5941" H 8550 3700 50  0000 C CNN
+F 2 "lpa96_footprints:TLC5941_PWP_28" H 8550 3600 50  0001 C CNN
+F 3 "DOCUMENTATION" H 8550 3600 50  0001 C CNN
+	1    8550 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5D9AE7D6
+P 9400 4800
+AR Path="/5D9AE7D6" Ref="#PWR?"  Part="1" 
+AR Path="/5362FF20/5D9AE7D6" Ref="#PWR0126"  Part="1" 
+F 0 "#PWR0126" H 9400 4650 50  0001 C CNN
+F 1 "VCC" H 9417 4973 50  0000 C CNN
+F 2 "" H 9400 4800 50  0001 C CNN
+F 3 "" H 9400 4800 50  0001 C CNN
+	1    9400 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9400 4800 9400 4950
+$Comp
+L Device:C C11
+U 1 1 53630EAA
+P 9600 4750
+F 0 "C11" H 9600 4850 40  0000 L CNN
+F 1 "100nF" H 9400 4650 40  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 9638 4600 30  0001 C CNN
+F 3 "~" H 9600 4750 60  0000 C CNN
+	1    9600 4750
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C10
+U 1 1 53630EC9
+P 9600 2750
+F 0 "C10" H 9600 2850 40  0000 L CNN
+F 1 "100nF" H 9400 2650 40  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 9638 2600 30  0001 C CNN
+F 3 "~" H 9600 2750 60  0000 C CNN
+	1    9600 2750
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5D9E9520
+P 9400 2800
+AR Path="/5D9E9520" Ref="#PWR?"  Part="1" 
+AR Path="/5362FF20/5D9E9520" Ref="#PWR0127"  Part="1" 
+F 0 "#PWR0127" H 9400 2650 50  0001 C CNN
+F 1 "VCC" H 9417 2973 50  0000 C CNN
+F 2 "" H 9400 2800 50  0001 C CNN
+F 3 "" H 9400 2800 50  0001 C CNN
+	1    9400 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9400 2800 9400 2950
+$Comp
+L Device:C C9
+U 1 1 53630EE2
+P 9600 750
+F 0 "C9" H 9600 850 40  0000 L CNN
+F 1 "100nF" H 9400 650 40  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 9638 600 30  0001 C CNN
+F 3 "~" H 9600 750 60  0000 C CNN
+	1    9600 750 
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5DA231D4
+P 9400 800
+AR Path="/5DA231D4" Ref="#PWR?"  Part="1" 
+AR Path="/5362FF20/5DA231D4" Ref="#PWR0128"  Part="1" 
+F 0 "#PWR0128" H 9400 650 50  0001 C CNN
+F 1 "VCC" H 9417 973 50  0000 C CNN
+F 2 "" H 9400 800 50  0001 C CNN
+F 3 "" H 9400 800 50  0001 C CNN
+	1    9400 800 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9400 800  9400 950 
+$Comp
+L power:VCC #PWR?
+U 1 1 5DA5D878
+P 5750 6500
+AR Path="/5DA5D878" Ref="#PWR?"  Part="1" 
+AR Path="/5362FF20/5DA5D878" Ref="#PWR0129"  Part="1" 
+F 0 "#PWR0129" H 5750 6350 50  0001 C CNN
+F 1 "VCC" H 5767 6673 50  0000 C CNN
+F 2 "" H 5750 6500 50  0001 C CNN
+F 3 "" H 5750 6500 50  0001 C CNN
+	1    5750 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C8
+U 1 1 53630180
+P 4050 5400
+F 0 "C8" H 4050 5500 40  0000 L CNN
+F 1 "100nF" H 3850 5300 40  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 4088 5250 30  0001 C CNN
+F 3 "~" H 4050 5400 60  0000 C CNN
+	1    4050 5400
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5DB0D020
+P 3850 5450
+AR Path="/5DB0D020" Ref="#PWR?"  Part="1" 
+AR Path="/5362FF20/5DB0D020" Ref="#PWR0130"  Part="1" 
+F 0 "#PWR0130" H 3850 5300 50  0001 C CNN
+F 1 "VCC" H 3867 5623 50  0000 C CNN
+F 2 "" H 3850 5450 50  0001 C CNN
+F 3 "" H 3850 5450 50  0001 C CNN
+	1    3850 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 5450 3850 5600
+$Comp
+L Device:C C7
+U 1 1 53AA0807
+P 4050 3050
+F 0 "C7" H 4050 3150 40  0000 L CNN
+F 1 "100nF" H 3850 2950 40  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 4088 2900 30  0001 C CNN
+F 3 "~" H 4050 3050 60  0000 C CNN
+	1    4050 3050
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5DB46801
+P 3850 3100
+AR Path="/5DB46801" Ref="#PWR?"  Part="1" 
+AR Path="/5362FF20/5DB46801" Ref="#PWR0131"  Part="1" 
+F 0 "#PWR0131" H 3850 2950 50  0001 C CNN
+F 1 "VCC" H 3867 3273 50  0000 C CNN
+F 2 "" H 3850 3100 50  0001 C CNN
+F 3 "" H 3850 3100 50  0001 C CNN
+	1    3850 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 3100 3850 3250
+$Comp
+L Device:C C6
+U 1 1 53630972
+P 4050 800
+F 0 "C6" H 4050 900 40  0000 L CNN
+F 1 "100nF" H 3850 700 40  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 4088 650 30  0001 C CNN
+F 3 "~" H 4050 800 60  0000 C CNN
+	1    4050 800 
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5DB7FF8C
+P 3850 800
+AR Path="/5DB7FF8C" Ref="#PWR?"  Part="1" 
+AR Path="/5362FF20/5DB7FF8C" Ref="#PWR0132"  Part="1" 
+F 0 "#PWR0132" H 3850 650 50  0001 C CNN
+F 1 "VCC" H 3867 973 50  0000 C CNN
+F 2 "" H 3850 800 50  0001 C CNN
+F 3 "" H 3850 800 50  0001 C CNN
+	1    3850 800 
+	1    0    0    -1  
+$EndComp
+Text HLabel 5500 6600 0    50   Input ~ 0
+VCC
+Wire Wire Line
+	5500 6600 5750 6600
+Connection ~ 5750 6600
+Wire Wire Line
+	5750 6600 5750 6700
+Wire Wire Line
+	3850 800  3850 1000
+Wire Wire Line
+	5750 6500 5750 6600
 $EndSCHEMATC

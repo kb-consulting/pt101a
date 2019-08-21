@@ -1,4 +1,4 @@
-(module PIN_ARRAY_2X1_3960um (layer F.Cu) (tedit 5D5D69BE)
+(module PIN_ARRAY_2X1_3960um (layer F.Cu) (tedit 5D5DC2AC)
   (descr "Connecteurs 2 pins")
   (tags "CONN DEV")
   (fp_text reference P1 (at -0.1 -4.8) (layer F.SilkS)
@@ -14,8 +14,8 @@
   (pad 2 thru_hole circle (at 1.98 0) (size 2.5 2.5) (drill 1.8) (layers *.Cu *.Mask F.SilkS))
   (pad 1 thru_hole rect (at -1.98 0) (size 2.3 2.3) (drill 1.8) (layers *.Cu *.Mask F.SilkS)
     (zone_connect 1) (thermal_width 0.5) (thermal_gap 0.4))
-  (model pin_array/pins_array_2x1.wrl
-    (at (xyz 0 0 0))
+  (model ${KISYS3DMOD}/Connector_Phoenix_MC.3dshapes/PhoenixContact_MCV_1,5_2-G-3.5_1x02_P3.50mm_Vertical.step
+    (offset (xyz -1.75 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
   )

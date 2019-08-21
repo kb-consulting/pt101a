@@ -20,8 +20,6 @@ Text Label 3600 6200 0    60   ~ 0
 ON
 Text Label 8950 4050 0    60   ~ 0
 SS
-Text Label 2950 900  0    60   ~ 0
-VCC
 Text Label 4400 2400 0    60   ~ 0
 MISO
 Text Label 4400 2200 0    60   ~ 0
@@ -121,8 +119,6 @@ F 3 "~" H 4450 7150 60  0000 C CNN
 $EndComp
 Text Label 8800 5300 0    60   ~ 0
 RST
-Text Label 4750 7550 0    60   ~ 0
-VCC
 NoConn ~ 8700 4700
 NoConn ~ 8700 4800
 NoConn ~ 8700 4900
@@ -138,8 +134,6 @@ Text Label 8950 5750 0    60   ~ 0
 BLANK
 Text Label 8950 3950 0    60   ~ 0
 XLAT
-Text Label 6750 3750 2    60   ~ 0
-VCC
 NoConn ~ 6800 4450
 $Comp
 L Device:C C2
@@ -187,18 +181,16 @@ MOSI
 $Comp
 L Device:R R1
 U 1 1 5214E00C
-P 4400 7550
-F 0 "R1" V 4480 7550 40  0000 C CNN
-F 1 "10K" V 4300 7550 40  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 4330 7550 30  0001 C CNN
-F 3 "~" H 4400 7550 30  0000 C CNN
-	1    4400 7550
+P 4400 7650
+F 0 "R1" V 4480 7650 40  0000 C CNN
+F 1 "10K" V 4300 7650 40  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 4330 7650 30  0001 C CNN
+F 3 "~" H 4400 7650 30  0000 C CNN
+	1    4400 7650
 	0    -1   -1   0   
 $EndComp
 Text Label 8950 4250 0    60   ~ 0
 MISO
-Text Label 2600 6150 2    60   ~ 0
-VCC
 Text Label 2500 6500 0    60   ~ 0
 MOSI
 Text Label 1700 6600 2    60   ~ 0
@@ -207,8 +199,6 @@ Text Label 1700 6500 2    60   ~ 0
 SCK
 Text Label 1700 6400 2    60   ~ 0
 MISO
-Text Label 4100 4250 0    60   ~ 0
-VCC
 $Comp
 L lpa96_symbols:CONN_2 P1
 U 1 1 5213FDDC
@@ -231,21 +221,6 @@ F 3 "" H 2100 6550 60  0000 C CNN
 	1    2100 6550
 	1    0    0    -1  
 $EndComp
-$Sheet
-S 6950 1300 2250 1200
-U 5362FF20
-F0 "lpa96_leds_drivers" 50
-F1 "lpa96_leds_drivers.sch" 50
-F2 "XLAT" I L 6950 1450 60 
-F3 "SCLK" I L 6950 1600 60 
-F4 "SIN" I L 6950 1750 60 
-F5 "MODE" I L 6950 1900 60 
-F6 "BLANK" I L 6950 2050 60 
-F7 "GSCLK" I L 6950 2200 60 
-F8 "VIN" I R 9200 1650 60 
-F9 "VCC" I R 9200 2100 60 
-F10 "SOUT" I L 6950 2350 60 
-$EndSheet
 $Comp
 L Device:R R2
 U 1 1 5363149A
@@ -257,8 +232,6 @@ F 3 "~" H 6300 1750 30  0000 C CNN
 	1    6300 1750
 	-1   0    0    1   
 $EndComp
-Text Label 6300 1400 0    60   ~ 0
-VCC
 Text Label 6800 1450 2    60   ~ 0
 XLAT
 Text Label 6800 1600 2    60   ~ 0
@@ -271,8 +244,6 @@ Text Label 6800 2200 2    60   ~ 0
 GSCLK
 Text Label 9350 1650 0    60   ~ 0
 VIN
-Text Label 9350 2100 0    60   ~ 0
-VCC
 Text Label 6100 2050 2    60   ~ 0
 BLANK
 $Comp
@@ -339,8 +310,6 @@ Wire Wire Line
 Wire Wire Line
 	1800 4400 1900 4400
 Connection ~ 4100 7150
-Wire Wire Line
-	4100 7550 4100 7150
 Connection ~ 5000 7150
 Wire Wire Line
 	5000 7150 4750 7150
@@ -384,8 +353,6 @@ Connection ~ 6750 3850
 Connection ~ 6750 4150
 Connection ~ 6750 3950
 Wire Wire Line
-	6750 3750 6750 3850
-Wire Wire Line
 	6800 3850 6750 3850
 Wire Wire Line
 	6250 3950 6250 4150
@@ -395,8 +362,6 @@ Wire Wire Line
 	2600 6600 2600 6700
 Wire Wire Line
 	2500 6600 2600 6600
-Wire Wire Line
-	2600 6400 2600 6150
 Wire Wire Line
 	2500 6400 2600 6400
 Wire Wire Line
@@ -413,13 +378,10 @@ Wire Wire Line
 	6950 2200 6800 2200
 Wire Wire Line
 	9200 1650 9350 1650
-Wire Wire Line
-	9200 2100 9350 2100
 Connection ~ 6300 2050
 Connection ~ 2900 4250
 Wire Wire Line
 	2850 2000 2850 2300
-Connection ~ 2850 2300
 Wire Wire Line
 	2850 2000 2750 2000
 $Comp
@@ -483,8 +445,6 @@ Wire Wire Line
 Wire Wire Line
 	3150 1700 2750 1700
 Wire Wire Line
-	2950 900  2950 1000
-Wire Wire Line
 	2950 2100 2750 2100
 Connection ~ 3350 1800
 Connection ~ 3550 1900
@@ -495,8 +455,6 @@ Wire Wire Line
 	6250 6150 6250 6300
 Wire Wire Line
 	6250 6050 6250 6150
-Wire Wire Line
-	1900 4700 1900 4750
 Wire Wire Line
 	1900 4400 2100 4400
 Wire Wire Line
@@ -524,8 +482,6 @@ Wire Wire Line
 Wire Wire Line
 	2900 4250 3100 4250
 Wire Wire Line
-	2850 2300 2850 2650
-Wire Wire Line
 	2950 1000 2950 2100
 Wire Wire Line
 	3350 1800 4400 1800
@@ -551,7 +507,7 @@ Processor\n
 Text Notes 3650 5800 0    50   ~ 0
 SW1 - Switch to reset processor\nLED97 - lit when running\nLED98 - lit if error\nLED99 - lit once finished\n(LED behaviour software dependant)
 Text Notes 4400 3850 0    50   ~ 0
-TODO major:\nrestructure firmware\nmanufacturing data\ndo all 3d models\nAdd BOM info to design (+ choose new part for C5)\nVCC LD1117\n\nTODO minor:\nSort out libraries\nFix ERCs\nchange LD1117S33 symbol part to match
+TODO:\nrestructure firmware\nmanufacturing data\nsort P1\nAdd BOM info to design (+ choose new part for C5)\nVCC LD1117\n\nTODO minor:\nFix ERCs\nchange LD1117S33 symbol part to match
 Wire Wire Line
 	3950 4250 4100 4250
 Connection ~ 3950 4250
@@ -664,14 +620,14 @@ $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5D684D23
-P 1900 4750
+P 1900 4950
 AR Path="/5362FF20/5D684D23" Ref="#PWR?"  Part="1" 
 AR Path="/5D684D23" Ref="#PWR0112"  Part="1" 
-F 0 "#PWR0112" H 1900 4500 50  0001 C CNN
-F 1 "GND" H 1822 4633 50  0000 R BNN
-F 2 "" H 1900 4750 50  0001 C CNN
-F 3 "" H 1900 4750 50  0001 C CNN
-	1    1900 4750
+F 0 "#PWR0112" H 1900 4700 50  0001 C CNN
+F 1 "GND" H 1822 4833 50  0000 R BNN
+F 2 "" H 1900 4950 50  0001 C CNN
+F 3 "" H 1900 4950 50  0001 C CNN
+	1    1900 4950
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -688,25 +644,15 @@ F 3 "" H 6250 6300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6300 1400 6300 1600
-Wire Wire Line
 	6300 1900 6300 2050
 Wire Wire Line
-	2950 1000 3950 1000
-Wire Wire Line
-	3150 1000 3150 1100
+	2950 1000 3150 1000
 Wire Wire Line
 	3150 1400 3150 1700
 Wire Wire Line
-	3350 1000 3350 1100
-Wire Wire Line
 	3350 1400 3350 1800
 Wire Wire Line
-	3550 1000 3550 1100
-Wire Wire Line
 	3550 1400 3550 1900
-Wire Wire Line
-	3750 1000 3750 1100
 Wire Wire Line
 	3750 1400 3750 2400
 Wire Wire Line
@@ -725,10 +671,6 @@ Wire Wire Line
 	3600 6800 3900 6800
 Wire Wire Line
 	4200 6800 4450 6800
-Wire Wire Line
-	4550 7550 4750 7550
-Wire Wire Line
-	4100 7550 4250 7550
 Connection ~ 3500 4700
 Text Notes 3650 5350 0    59   ~ 12
 Status & Reset
@@ -777,4 +719,175 @@ Wire Wire Line
 	6650 4150 6750 4150
 Wire Wire Line
 	6650 3950 6750 3950
+Wire Wire Line
+	3750 1100 3750 1000
+Connection ~ 3750 1000
+Wire Wire Line
+	3750 1000 3950 1000
+Wire Wire Line
+	3550 1100 3550 1000
+Connection ~ 3550 1000
+Wire Wire Line
+	3550 1000 3750 1000
+Wire Wire Line
+	3350 1100 3350 1000
+Connection ~ 3350 1000
+Wire Wire Line
+	3350 1000 3550 1000
+Wire Wire Line
+	3150 1100 3150 1000
+Connection ~ 3150 1000
+Wire Wire Line
+	3150 1000 3350 1000
+Wire Wire Line
+	2850 2300 2850 2650
+Connection ~ 2850 2300
+$Comp
+L power:GND #PWR?
+U 1 1 5D79002C
+P 9400 2400
+AR Path="/5362FF20/5D79002C" Ref="#PWR?"  Part="1" 
+AR Path="/5D79002C" Ref="#PWR0102"  Part="1" 
+F 0 "#PWR0102" H 9400 2150 50  0001 C CNN
+F 1 "GND" H 9322 2283 50  0000 R BNN
+F 2 "" H 9400 2400 50  0001 C CNN
+F 3 "" H 9400 2400 50  0001 C CNN
+	1    9400 2400
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	9400 2400 9400 2350
+Wire Wire Line
+	9400 2350 9200 2350
+$Comp
+L power:VCC #PWR0120
+U 1 1 5D7E76B2
+P 4100 4200
+F 0 "#PWR0120" H 4100 4050 50  0001 C CNN
+F 1 "VCC" H 4117 4373 50  0000 C CNN
+F 2 "" H 4100 4200 50  0001 C CNN
+F 3 "" H 4100 4200 50  0001 C CNN
+	1    4100 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 4250 4100 4200
+$Comp
+L power:VCC #PWR0121
+U 1 1 5DBB9CE0
+P 2950 850
+F 0 "#PWR0121" H 2950 700 50  0001 C CNN
+F 1 "VCC" H 2967 1023 50  0000 C CNN
+F 2 "" H 2950 850 50  0001 C CNN
+F 3 "" H 2950 850 50  0001 C CNN
+	1    2950 850 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 850  2950 1000
+$Comp
+L power:VCC #PWR0122
+U 1 1 5DBBF76D
+P 6300 1350
+F 0 "#PWR0122" H 6300 1200 50  0001 C CNN
+F 1 "VCC" H 6317 1523 50  0000 C CNN
+F 2 "" H 6300 1350 50  0001 C CNN
+F 3 "" H 6300 1350 50  0001 C CNN
+	1    6300 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 1350 6300 1600
+Wire Wire Line
+	9200 2100 9350 2100
+$Comp
+L power:VCC #PWR0123
+U 1 1 5DBC5311
+P 9350 2050
+F 0 "#PWR0123" H 9350 1900 50  0001 C CNN
+F 1 "VCC" H 9367 2223 50  0000 C CNN
+F 2 "" H 9350 2050 50  0001 C CNN
+F 3 "" H 9350 2050 50  0001 C CNN
+	1    9350 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9350 2100 9350 2050
+$Comp
+L power:VCC #PWR0124
+U 1 1 5DBCAA86
+P 6750 3700
+F 0 "#PWR0124" H 6750 3550 50  0001 C CNN
+F 1 "VCC" H 6767 3873 50  0000 C CNN
+F 2 "" H 6750 3700 50  0001 C CNN
+F 3 "" H 6750 3700 50  0001 C CNN
+	1    6750 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 3700 6750 3850
+$Comp
+L power:VCC #PWR0125
+U 1 1 5DBD5D00
+P 2600 6250
+F 0 "#PWR0125" H 2600 6100 50  0001 C CNN
+F 1 "VCC" H 2617 6423 50  0000 C CNN
+F 2 "" H 2600 6250 50  0001 C CNN
+F 3 "" H 2600 6250 50  0001 C CNN
+	1    2600 6250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 6250 2600 6400
+$Sheet
+S 6950 1300 2250 1200
+U 5362FF20
+F0 "lpa96_leds_drivers" 50
+F1 "lpa96_leds_drivers.sch" 50
+F2 "XLAT" I L 6950 1450 60 
+F3 "SCLK" I L 6950 1600 60 
+F4 "SIN" I L 6950 1750 60 
+F5 "MODE" I L 6950 1900 60 
+F6 "BLANK" I L 6950 2050 60 
+F7 "GSCLK" I L 6950 2200 60 
+F8 "VIN" I R 9200 1650 60 
+F9 "VCC" I R 9200 2100 60 
+F10 "SOUT" I L 6950 2350 60 
+F11 "GND" I R 9200 2350 50 
+$EndSheet
+$Comp
+L power:VCC #PWR0133
+U 1 1 5DC377B0
+P 4650 7550
+F 0 "#PWR0133" H 4650 7400 50  0001 C CNN
+F 1 "VCC" H 4667 7723 50  0000 C CNN
+F 2 "" H 4650 7550 50  0001 C CNN
+F 3 "" H 4650 7550 50  0001 C CNN
+	1    4650 7550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 7650 4550 7650
+Wire Wire Line
+	4650 7550 4650 7650
+Wire Wire Line
+	4250 7650 4100 7650
+Wire Wire Line
+	4100 7150 4100 7650
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5DC82CA6
+P 1900 4800
+F 0 "#FLG0101" H 1900 4875 50  0001 C CNN
+F 1 "PWR_FLAG" V 1900 5100 50  0001 C CNN
+F 2 "" H 1900 4800 50  0001 C CNN
+F 3 "~" H 1900 4800 50  0001 C CNN
+	1    1900 4800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1900 4700 1900 4800
+Connection ~ 1900 4800
+Wire Wire Line
+	1900 4800 1900 4950
 $EndSCHEMATC
