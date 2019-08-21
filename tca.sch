@@ -36,7 +36,7 @@ U 1 1 5358AEF9
 P 2350 1900
 F 0 "U1" H 2100 1600 60  0000 C CNN
 F 1 "SD_CARD" H 2100 1700 60  0000 C CNN
-F 2 "SD_CONN" H 2350 1900 60  0001 C CNN
+F 2 "lpa96_footprints:SD_CONN" H 2350 1900 60  0001 C CNN
 F 3 "" H 2350 1900 60  0000 C CNN
 	1    2350 1900
 	1    0    0    -1  
@@ -47,7 +47,7 @@ U 1 1 535704B9
 P 2200 4500
 F 0 "C3" H 2200 4600 40  0000 L CNN
 F 1 "47uF" H 2206 4415 40  0000 L CNN
-F 2 "Capacitors_SMD:CP_Elec_6.3x5.3" H 2238 4350 30  0001 C CNN
+F 2 "lpa96_footprints:CP_Elec_6.3x5.3" H 2238 4350 30  0001 C CNN
 F 3 "~" H 2200 4500 60  0000 C CNN
 	1    2200 4500
 	1    0    0    -1  
@@ -58,7 +58,7 @@ U 1 1 5357046B
 P 3500 4300
 F 0 "U2" H 3650 4104 60  0000 C CNN
 F 1 "LD1117S33" H 3500 4500 60  0000 C CNN
-F 2 "SOT223" H 3500 4300 60  0001 C CNN
+F 2 "lpa96_footprints:SOT223" H 3500 4300 60  0001 C CNN
 F 3 "~" H 3500 4300 60  0000 C CNN
 	1    3500 4300
 	1    0    0    -1  
@@ -114,7 +114,7 @@ U 1 1 5356E35F
 P 4450 7150
 F 0 "SW1" H 4450 7300 50  0000 C CNN
 F 1 "SW_PUSH" H 4450 7070 50  0000 C CNN
-F 2 "SW_PUSH_SMD" H 4450 7150 60  0001 C CNN
+F 2 "lpa96_footprints:SW_PUSH_SMD" H 4450 7150 60  0001 C CNN
 F 3 "~" H 4450 7150 60  0000 C CNN
 	1    4450 7150
 	1    0    0    -1  
@@ -142,22 +142,22 @@ Text Label 6750 3750 2    60   ~ 0
 VCC
 NoConn ~ 6800 4450
 $Comp
-L tca-rescue:C C2
+L Device:C C2
 U 1 1 52150FEA
 P 6500 4150
-F 0 "C2" H 6500 4250 40  0000 L CNN
-F 1 "0.1 uF" H 6506 4065 40  0000 L CNN
+F 0 "C2" H 6400 4050 40  0000 L CNN
+F 1 "100nF" H 6300 4250 40  0000 L CNN
 F 2 "Capacitors_SMD:C_0805" H 6538 4000 30  0001 C CNN
 F 3 "~" H 6500 4150 60  0000 C CNN
 	1    6500 4150
 	0    -1   -1   0   
 $EndComp
 $Comp
-L tca-rescue:C C1
+L Device:C C1
 U 1 1 52150FDD
 P 6500 3950
-F 0 "C1" H 6500 4050 40  0000 L CNN
-F 1 "0.1 uF" H 6506 3865 40  0000 L CNN
+F 0 "C1" H 6550 3850 40  0000 L CNN
+F 1 "100nF" H 6550 4050 40  0000 L CNN
 F 2 "Capacitors_SMD:C_0805" H 6538 3800 30  0001 C CNN
 F 3 "~" H 6500 3950 60  0000 C CNN
 	1    6500 3950
@@ -169,7 +169,7 @@ U 1 1 52150E25
 P 7700 4950
 F 0 "IC1" H 6950 6200 40  0000 L BNN
 F 1 "ATMEGA328-A" H 8100 3550 40  0000 L BNN
-F 2 "TQFP32_FIXED" H 7700 4950 30  0001 C CIN
+F 2 "lpa96_footprints:TQFP32_FIXED" H 7700 4950 30  0001 C CIN
 F 3 "" H 7700 4950 60  0000 C CNN
 	1    7700 4950
 	1    0    0    -1  
@@ -215,7 +215,7 @@ U 1 1 5213FDDC
 P 1450 4500
 F 0 "P1" V 1400 4500 40  0000 C CNN
 F 1 "CONN_2" V 1500 4500 40  0000 C CNN
-F 2 "PIN_ARRAY_2X1_3960um" H 1450 4500 60  0001 C CNN
+F 2 "lpa96_footprints:PIN_ARRAY_2X1_3960um" H 1450 4500 60  0001 C CNN
 F 3 "" H 1450 4500 60  0000 C CNN
 	1    1450 4500
 	-1   0    0    -1  
@@ -226,7 +226,7 @@ U 1 1 5213FCAA
 P 2100 6550
 F 0 "P2" H 2100 6800 50  0000 C CNN
 F 1 "CONN_3X2" V 2100 6600 40  0000 C CNN
-F 2 "pin_array_3x2" H 2100 6550 60  0001 C CNN
+F 2 "lpa96_footprints:pin_array_3x2" H 2100 6550 60  0001 C CNN
 F 3 "" H 2100 6550 60  0000 C CNN
 	1    2100 6550
 	1    0    0    -1  
@@ -281,7 +281,7 @@ U 1 1 53AA01D0
 P 2550 4250
 F 0 "L1" V 2500 4250 40  0000 C CNN
 F 1 "10uH" V 2650 4250 40  0000 C CNN
-F 2 "Inductors_NEOSID:Neosid_Inductor_SM-NE30_SMD1210" H 2550 4250 60  0001 C CNN
+F 2 "lpa96_footprints:L-1210" H 2550 4250 60  0001 C CNN
 F 3 "~" H 2550 4250 60  0000 C CNN
 	1    2550 4250
 	0    -1   -1   0   
@@ -292,7 +292,7 @@ U 1 1 53AA0322
 P 2900 4500
 F 0 "C4" H 2900 4600 40  0000 L CNN
 F 1 "47uF" H 2906 4415 40  0000 L CNN
-F 2 "Capacitors_SMD:CP_Elec_6.3x5.3" H 2938 4350 30  0001 C CNN
+F 2 "lpa96_footprints:CP_Elec_6.3x5.3" H 2938 4350 30  0001 C CNN
 F 3 "~" H 2900 4500 60  0000 C CNN
 	1    2900 4500
 	1    0    0    -1  
@@ -319,8 +319,6 @@ Wire Wire Line
 	2750 1900 3550 1900
 Wire Wire Line
 	2750 1800 3350 1800
-Wire Wire Line
-	3950 4300 3950 4250
 Wire Wire Line
 	3900 4250 3950 4250
 Wire Wire Line
@@ -372,11 +370,7 @@ Wire Wire Line
 	8700 5850 8950 5850
 Wire Wire Line
 	8700 5550 8950 5550
-Wire Wire Line
-	6250 3950 6300 3950
 Connection ~ 6250 4150
-Wire Wire Line
-	6300 4150 6250 4150
 Wire Wire Line
 	9200 5050 9450 5050
 Wire Wire Line
@@ -390,13 +384,9 @@ Connection ~ 6750 3850
 Connection ~ 6750 4150
 Connection ~ 6750 3950
 Wire Wire Line
-	6700 4150 6750 4150
-Wire Wire Line
 	6750 3750 6750 3850
 Wire Wire Line
 	6800 3850 6750 3850
-Wire Wire Line
-	6700 3950 6750 3950
 Wire Wire Line
 	6250 3950 6250 4150
 Wire Wire Line
@@ -546,28 +536,22 @@ Wire Wire Line
 NoConn ~ 6950 2350
 Text Notes 1700 5700 0    59   ~ 12
 Programming Header
-Text Notes 1700 5850 0    50   ~ 0
-For ...?
 Text Notes 1650 3500 0    59   ~ 12
 Power Supply
-Text Notes 1650 3850 0    50   ~ 0
-5V Input Supply (VIN)\n?? connector\nVIN supplies LED grid\nRegulated 3.3V (VCC) supplies ICs
+Text Notes 1650 3800 0    50   ~ 0
+5V Input Supply (VIN)\nVIN supplies LED grid\nRegulated 3.3V (VCC) supplies ICs
 Text Notes 1750 1100 0    59   ~ 12
 SD Card Socket
-Text Notes 1750 1300 0    50   ~ 0
-For ?? cards\nSetup to... as... pullups
 Text Notes 7550 900  0    59   ~ 12
 LED Circuitry
 Text Notes 7550 1050 0    50   ~ 0
 LED grid & driver ICs
-Text Notes 7450 3450 0    59   ~ 12
+Text Notes 7500 3550 0    59   ~ 12
 Processor\n
-Text Notes 7450 3600 0    50   ~ 0
-For ...?
 Text Notes 3650 5800 0    50   ~ 0
 SW1 - Switch to reset processor\nLED97 - lit when running\nLED98 - lit if error\nLED99 - lit once finished\n(LED behaviour software dependant)
 Text Notes 4400 3850 0    50   ~ 0
-TODO major:\nrestructure firmware\nmanufacturing data\ndo all 3d models\nAdd BOM info to design (+ choose new part for C5)\nVCC LD1117\n\nTODO minor:\nAdd annotation text\nSort out libraries\nFix ERCs\nchange LD1117S33 symbol part to match
+TODO major:\nrestructure firmware\nmanufacturing data\ndo all 3d models\nAdd BOM info to design (+ choose new part for C5)\nVCC LD1117\n\nTODO minor:\nSort out libraries\nFix ERCs\nchange LD1117S33 symbol part to match
 Wire Wire Line
 	3950 4250 4100 4250
 Connection ~ 3950 4250
@@ -629,7 +613,7 @@ U 1 1 52166DFA
 P 9500 4750
 F 0 "Y1" H 9520 4950 60  0000 C CNN
 F 1 "RESONATEUR" H 9930 4550 60  0000 C CNN
-F 2 "crystal_smd" H 9500 4750 60  0001 C CNN
+F 2 "lpa96_footprints:crystal_smd" H 9500 4750 60  0001 C CNN
 F 3 "" H 9500 4750 60  0000 C CNN
 	1    9500 4750
 	0    -1   -1   0   
@@ -751,7 +735,7 @@ Status & Reset
 Wire Wire Line
 	3500 4700 3950 4700
 $Comp
-L tca-rescue:C C5
+L Device:C C5
 U 1 1 535704C8
 P 3950 4500
 F 0 "C5" H 3950 4600 40  0000 L CNN
@@ -781,4 +765,16 @@ Wire Wire Line
 	2700 4250 2900 4250
 Wire Wire Line
 	2200 4250 2400 4250
+Wire Wire Line
+	3950 4250 3950 4350
+Wire Wire Line
+	3950 4650 3950 4700
+Wire Wire Line
+	6250 3950 6350 3950
+Wire Wire Line
+	6250 4150 6350 4150
+Wire Wire Line
+	6650 4150 6750 4150
+Wire Wire Line
+	6650 3950 6750 3950
 $EndSCHEMATC

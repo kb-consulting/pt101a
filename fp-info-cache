@@ -1,4 +1,4 @@
-134711596907706
+151942896364384
 Air_Coils_SML_NEOSID
 Neosid_Air-Coil_SML_1turn_HDM0131A
 
@@ -48202,12 +48202,68 @@ SolderWirePad_single_SMD_5x10mm
 0
 0
 lpa96_footprints
+1pin
+module 1 pin (ou trou mecanique de percage)
+DEV
+0
+1
+1
+lpa96_footprints
+CP_Elec_6.3x5.3
+SMT capacitor, aluminium electrolytic, 6.3x5.3
+
+0
+2
+2
+lpa96_footprints
+L-1210
+
+CMS SM
+0
+2
+2
+lpa96_footprints
+PIN_ARRAY_2X1_3960um
+Connecteurs 2 pins
+CONN DEV
+0
+2
+2
+lpa96_footprints
+SD_CONN
+
+
+0
+15
+13
+lpa96_footprints
+SOT223
+module CMS SOT223 4 pins
+CMS SOT
+0
+4
+4
+lpa96_footprints
+SW_PUSH_SMD
+
+
+0
+4
+2
+lpa96_footprints
 TLC5941_PWP_28
 
 
 0
 29
 29
+lpa96_footprints
+TQFP32_FIXED
+
+
+0
+32
+32
 lpa96_footprints
 VLDx1232G
 Diode, Small Outline Diode (SOD); 2.30 mm L X 2.30 mm W X 3.02 mm H body
@@ -48216,9 +48272,30 @@ Diode, Small Outline Diode (SOD); 2.30 mm L X 2.30 mm W X 3.02 mm H body
 2
 2
 lpa96_footprints
+crystal_smd
+
+
+0
+3
+3
+lpa96_footprints
 example_heatsink_14x14x14mm
 http://www.aavid.eu/products/standard/tv5g
 Heatsink TV5G TO-220 Horizontal 
 0
 0
 0
+lpa96_footprints
+hole_ansi_6
+module 1 pin (ou trou mecanique de percage)
+DEV
+0
+1
+1
+lpa96_footprints
+pin_array_3x2
+Double rangee de contacts 2 x 4 pins
+CONN
+0
+6
+6
