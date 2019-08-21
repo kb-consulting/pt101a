@@ -5,10 +5,10 @@ EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 2
-Title ""
-Date "25 jun 2014"
-Rev ""
-Comp ""
+Title "96-well Light Plate Apparatus (LPA), Blue 465nm"
+Date "2019-08-22"
+Rev "2.0"
+Comp "Authors: Tabor lab/Evan Olson/Sebastian Castillo/Open Bioeconomy Lab/Kevin Bibby"
 Comment1 ""
 Comment2 ""
 Comment3 ""
@@ -506,8 +506,8 @@ Text Notes 7500 3550 0    59   ~ 12
 Processor\n
 Text Notes 3650 5800 0    50   ~ 0
 SW1 - Switch to reset processor\nLED97 - lit when running\nLED98 - lit if error\nLED99 - lit once finished\n(LED behaviour software dependant)
-Text Notes 4400 3850 0    50   ~ 0
-TODO:\nrestructure firmware\nmanufacturing data\nsort P1\nAdd BOM info to design (+ choose new part for C5)\nVCC LD1117\n\nTODO minor:\nFix ERCs\nchange LD1117S33 symbol part to match
+Text Notes 4300 3550 0    50   ~ 0
+TODO:\nmanufacturing data\nsort P1\nAdd BOM info to design (+ choose new part for C5)\nVCC LD1117\nchange LD1117S33 symbol part to match
 Wire Wire Line
 	3950 4250 4100 4250
 Connection ~ 3950 4250
