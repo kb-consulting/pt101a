@@ -42,12 +42,12 @@ F 3 "" H 2350 1900 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L tca-rescue:C C3
+L Device:C C3
 U 1 1 535704B9
 P 2200 4500
 F 0 "C3" H 2200 4600 40  0000 L CNN
 F 1 "47uF" H 2206 4415 40  0000 L CNN
-F 2 "c_elec_6.3x5.3" H 2238 4350 30  0001 C CNN
+F 2 "Capacitors_SMD:CP_Elec_6.3x5.3" H 2238 4350 30  0001 C CNN
 F 3 "~" H 2200 4500 60  0000 C CNN
 	1    2200 4500
 	1    0    0    -1  
@@ -276,23 +276,23 @@ VCC
 Text Label 6100 2050 2    60   ~ 0
 BLANK
 $Comp
-L tca-rescue:INDUCTOR L1
+L Device:L L1
 U 1 1 53AA01D0
 P 2550 4250
 F 0 "L1" V 2500 4250 40  0000 C CNN
 F 1 "10uH" V 2650 4250 40  0000 C CNN
-F 2 "SM1210" H 2550 4250 60  0001 C CNN
+F 2 "Inductors_NEOSID:Neosid_Inductor_SM-NE30_SMD1210" H 2550 4250 60  0001 C CNN
 F 3 "~" H 2550 4250 60  0000 C CNN
 	1    2550 4250
 	0    -1   -1   0   
 $EndComp
 $Comp
-L tca-rescue:C C4
+L Device:C C4
 U 1 1 53AA0322
 P 2900 4500
 F 0 "C4" H 2900 4600 40  0000 L CNN
 F 1 "47uF" H 2906 4415 40  0000 L CNN
-F 2 "c_elec_6.3x5.3" H 2938 4350 30  0001 C CNN
+F 2 "Capacitors_SMD:CP_Elec_6.3x5.3" H 2938 4350 30  0001 C CNN
 F 3 "~" H 2900 4500 60  0000 C CNN
 	1    2900 4500
 	1    0    0    -1  
@@ -327,8 +327,6 @@ Wire Wire Line
 	3500 4700 3500 4550
 Connection ~ 1900 4700
 Connection ~ 2200 4250
-Wire Wire Line
-	2200 4300 2200 4250
 Connection ~ 1900 4400
 Wire Wire Line
 	2100 4250 2200 4250
@@ -428,15 +426,7 @@ Wire Wire Line
 Wire Wire Line
 	9200 2100 9350 2100
 Connection ~ 6300 2050
-Wire Wire Line
-	2850 4250 2900 4250
-Wire Wire Line
-	2900 4300 2900 4250
 Connection ~ 2900 4250
-Wire Wire Line
-	1900 4700 2200 4700
-Connection ~ 2200 4700
-Connection ~ 2900 4700
 Wire Wire Line
 	2850 2000 2850 2300
 Connection ~ 2850 2300
@@ -518,8 +508,6 @@ Wire Wire Line
 Wire Wire Line
 	1900 4700 1900 4750
 Wire Wire Line
-	2200 4250 2250 4250
-Wire Wire Line
 	1900 4400 2100 4400
 Wire Wire Line
 	4100 7150 4150 7150
@@ -545,10 +533,6 @@ Wire Wire Line
 	6300 2050 6950 2050
 Wire Wire Line
 	2900 4250 3100 4250
-Wire Wire Line
-	2200 4700 2900 4700
-Wire Wire Line
-	2900 4700 3500 4700
 Wire Wire Line
 	2850 2300 2850 2650
 Wire Wire Line
@@ -581,9 +565,9 @@ Processor\n
 Text Notes 7450 3600 0    50   ~ 0
 For ...?
 Text Notes 3650 5800 0    50   ~ 0
-RESET1 - Switch to reset processor\nON1 - LED, lit when running\nERR1 - LED, lit if error\nFIN1 - LED, lit once finished\n(LED behaviour software dependant)
+SW1 - Switch to reset processor\nLED97 - lit when running\nLED98 - lit if error\nLED99 - lit once finished\n(LED behaviour software dependant)
 Text Notes 4400 3850 0    50   ~ 0
-TODO major:\nrestructure firmware\ntidy silkscreen etc\nmanufacturing data\ndo all 3d models\nAdd BOM info to design (+ choose new part for C5)\nVCC LD1117\n\nTODO minor:\nAdd annotation text\nSort out libraries\nFix ERCs\nchange LD1117S33 symbol part to match
+TODO major:\nrestructure firmware\nmanufacturing data\ndo all 3d models\nAdd BOM info to design (+ choose new part for C5)\nVCC LD1117\n\nTODO minor:\nAdd annotation text\nSort out libraries\nFix ERCs\nchange LD1117S33 symbol part to match
 Wire Wire Line
 	3950 4250 4100 4250
 Connection ~ 3950 4250
@@ -777,4 +761,24 @@ F 3 "~" H 3950 4500 60  0000 C CNN
 	1    3950 4500
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	2900 4250 2900 4350
+Wire Wire Line
+	1900 4700 2200 4700
+Wire Wire Line
+	2200 4250 2200 4350
+Wire Wire Line
+	2200 4650 2200 4700
+Connection ~ 2200 4700
+Wire Wire Line
+	2200 4700 2900 4700
+Wire Wire Line
+	2900 4650 2900 4700
+Connection ~ 2900 4700
+Wire Wire Line
+	2900 4700 3500 4700
+Wire Wire Line
+	2700 4250 2900 4250
+Wire Wire Line
+	2200 4250 2400 4250
 $EndSCHEMATC
