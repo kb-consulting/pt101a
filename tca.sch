@@ -31,17 +31,6 @@ MOSI
 Text Label 4400 1800 0    60   ~ 0
 SS
 $Comp
-L tca-rescue:GND #PWR01
-U 1 1 5358B074
-P 2850 2650
-F 0 "#PWR01" H 2850 2650 30  0001 C CNN
-F 1 "GND" H 2850 2580 30  0001 C CNN
-F 2 "" H 2850 2650 60  0000 C CNN
-F 3 "" H 2850 2650 60  0000 C CNN
-	1    2850 2650
-	1    0    0    -1  
-$EndComp
-$Comp
 L lpa96_symbols:SD_CARD U1
 U 1 1 5358AEF9
 P 2350 1900
@@ -50,17 +39,6 @@ F 1 "SD_CARD" H 2100 1700 60  0000 C CNN
 F 2 "SD_CONN" H 2350 1900 60  0001 C CNN
 F 3 "" H 2350 1900 60  0000 C CNN
 	1    2350 1900
-	1    0    0    -1  
-$EndComp
-$Comp
-L tca-rescue:C C5
-U 1 1 535704C8
-P 3950 4500
-F 0 "C5" H 3950 4600 40  0000 L CNN
-F 1 "10uF" H 3956 4415 40  0000 L CNN
-F 2 "Capacitors_SMD:C_1206" H 3988 4350 30  0001 C CNN
-F 3 "~" H 3950 4500 60  0000 C CNN
-	1    3950 4500
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -92,10 +70,10 @@ FIN
 Text Label 3600 6500 0    60   ~ 0
 ERR
 $Comp
-L tca-rescue:R R_FIN1
+L Device:R R11
 U 1 1 5356ED9C
 P 4050 6800
-F 0 "R_FIN1" V 4130 6800 40  0000 C CNN
+F 0 "R11" V 4130 6800 40  0000 C CNN
 F 1 "330" V 3950 6800 40  0000 C CNN
 F 2 "Resistors_SMD:R_0805" V 3980 6800 30  0001 C CNN
 F 3 "~" H 4050 6800 30  0000 C CNN
@@ -103,10 +81,10 @@ F 3 "~" H 4050 6800 30  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L tca-rescue:R R_ERR1
+L Device:R R10
 U 1 1 5356ED8D
 P 4050 6500
-F 0 "R_ERR1" V 4130 6500 40  0000 C CNN
+F 0 "R10" V 4130 6500 40  0000 C CNN
 F 1 "330" V 3950 6500 40  0000 C CNN
 F 2 "Resistors_SMD:R_0805" V 3980 6500 30  0001 C CNN
 F 3 "~" H 4050 6500 30  0000 C CNN
@@ -114,10 +92,10 @@ F 3 "~" H 4050 6500 30  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L tca-rescue:R R_ON1
+L Device:R R9
 U 1 1 5356ED7E
 P 4050 6200
-F 0 "R_ON1" V 4130 6200 40  0000 C CNN
+F 0 "R9" V 4130 6200 40  0000 C CNN
 F 1 "330" V 3950 6200 40  0000 C CNN
 F 2 "Resistors_SMD:R_0805" V 3980 6200 30  0001 C CNN
 F 3 "~" H 4050 6200 30  0000 C CNN
@@ -128,24 +106,13 @@ Text Label 8800 5200 0    60   ~ 0
 FIN
 Text Label 8800 5100 0    60   ~ 0
 ERR
-$Comp
-L tca-rescue:GND #PWR02
-U 1 1 5356E577
-P 5000 7250
-F 0 "#PWR02" H 5000 7250 30  0001 C CNN
-F 1 "GND" H 5000 7180 30  0001 C CNN
-F 2 "" H 5000 7250 60  0000 C CNN
-F 3 "" H 5000 7250 60  0000 C CNN
-	1    5000 7250
-	1    0    0    -1  
-$EndComp
 Text Label 3900 7150 0    60   ~ 0
 RST
 $Comp
-L lpa96_symbols:SW_PUSH RESET1
+L lpa96_symbols:SW_PUSH SW1
 U 1 1 5356E35F
 P 4450 7150
-F 0 "RESET1" H 4450 7300 50  0000 C CNN
+F 0 "SW1" H 4450 7300 50  0000 C CNN
 F 1 "SW_PUSH" H 4450 7070 50  0000 C CNN
 F 2 "SW_PUSH_SMD" H 4450 7150 60  0001 C CNN
 F 3 "~" H 4450 7150 60  0000 C CNN
@@ -156,28 +123,6 @@ Text Label 8800 5300 0    60   ~ 0
 RST
 Text Label 4750 7550 0    60   ~ 0
 VCC
-$Comp
-L tca-rescue:GND #PWR03
-U 1 1 52166F83
-P 9750 4850
-F 0 "#PWR03" H 9750 4850 30  0001 C CNN
-F 1 "GND" H 9750 4780 30  0001 C CNN
-F 2 "" H 9750 4850 60  0000 C CNN
-F 3 "" H 9750 4850 60  0000 C CNN
-	1    9750 4850
-	1    0    0    -1  
-$EndComp
-$Comp
-L lpa96_symbols:RESONATEUR Y1
-U 1 1 52166DFA
-P 9500 4750
-F 0 "Y1" H 9520 4950 60  0000 C CNN
-F 1 "RESONATEUR" H 9930 4550 60  0000 C CNN
-F 2 "crystal_smd" H 9500 4750 60  0001 C CNN
-F 3 "" H 9500 4750 60  0000 C CNN
-	1    9500 4750
-	0    -1   -1   0   
-$EndComp
 NoConn ~ 8700 4700
 NoConn ~ 8700 4800
 NoConn ~ 8700 4900
@@ -219,17 +164,6 @@ F 3 "~" H 6500 3950 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L tca-rescue:GND #PWR04
-U 1 1 52150FBD
-P 6250 6300
-F 0 "#PWR04" H 6250 6300 30  0001 C CNN
-F 1 "GND" H 6250 6230 30  0001 C CNN
-F 2 "" H 6250 6300 60  0000 C CNN
-F 3 "" H 6250 6300 60  0000 C CNN
-	1    6250 6300
-	1    0    0    -1  
-$EndComp
-$Comp
 L lpa96_symbols:ATMEGA328-A IC1
 U 1 1 52150E25
 P 7700 4950
@@ -251,7 +185,7 @@ SIN
 Text Label 8950 4150 0    60   ~ 0
 MOSI
 $Comp
-L tca-rescue:R R1
+L Device:R R1
 U 1 1 5214E00C
 P 4400 7550
 F 0 "R1" V 4480 7550 40  0000 C CNN
@@ -265,17 +199,6 @@ Text Label 8950 4250 0    60   ~ 0
 MISO
 Text Label 2600 6150 2    60   ~ 0
 VCC
-$Comp
-L tca-rescue:GND #PWR05
-U 1 1 5214D884
-P 2600 6700
-F 0 "#PWR05" H 2600 6700 30  0001 C CNN
-F 1 "GND" H 2600 6630 30  0001 C CNN
-F 2 "" H 2600 6700 60  0000 C CNN
-F 3 "" H 2600 6700 60  0000 C CNN
-	1    2600 6700
-	1    0    0    -1  
-$EndComp
 Text Label 2500 6500 0    60   ~ 0
 MOSI
 Text Label 1700 6600 2    60   ~ 0
@@ -284,17 +207,6 @@ Text Label 1700 6500 2    60   ~ 0
 SCK
 Text Label 1700 6400 2    60   ~ 0
 MISO
-$Comp
-L tca-rescue:GND #PWR06
-U 1 1 5214D369
-P 1900 4750
-F 0 "#PWR06" H 1900 4750 30  0001 C CNN
-F 1 "GND" H 1900 4680 30  0001 C CNN
-F 2 "" H 1900 4750 60  0000 C CNN
-F 3 "" H 1900 4750 60  0000 C CNN
-	1    1900 4750
-	1    0    0    -1  
-$EndComp
 Text Label 4100 4250 0    60   ~ 0
 VCC
 $Comp
@@ -335,7 +247,7 @@ F9 "VCC" I R 9200 2100 60
 F10 "SOUT" I L 6950 2350 60 
 $EndSheet
 $Comp
-L tca-rescue:R R2
+L Device:R R2
 U 1 1 5363149A
 P 6300 1750
 F 0 "R2" V 6380 1750 40  0000 C CNN
@@ -411,7 +323,6 @@ Wire Wire Line
 	3950 4300 3950 4250
 Wire Wire Line
 	3900 4250 3950 4250
-Connection ~ 3500 4700
 Wire Wire Line
 	3500 4700 3500 4550
 Connection ~ 1900 4700
@@ -431,19 +342,9 @@ Wire Wire Line
 	1900 4400 1900 4250
 Wire Wire Line
 	1800 4400 1900 4400
-Wire Wire Line
-	4650 7550 4750 7550
 Connection ~ 4100 7150
 Wire Wire Line
 	4100 7550 4100 7150
-Wire Wire Line
-	4150 7550 4100 7550
-Wire Wire Line
-	3600 6800 3800 6800
-Wire Wire Line
-	3600 6500 3800 6500
-Wire Wire Line
-	3600 6200 3800 6200
 Connection ~ 5000 7150
 Wire Wire Line
 	5000 7150 4750 7150
@@ -451,12 +352,6 @@ Connection ~ 5000 6800
 Connection ~ 5000 6500
 Wire Wire Line
 	5000 6200 5000 6500
-Wire Wire Line
-	4300 6800 4450 6800
-Wire Wire Line
-	4300 6500 4450 6500
-Wire Wire Line
-	4300 6200 4450 6200
 Wire Wire Line
 	8800 5300 8700 5300
 Wire Wire Line
@@ -484,8 +379,6 @@ Wire Wire Line
 Connection ~ 6250 4150
 Wire Wire Line
 	6300 4150 6250 4150
-Wire Wire Line
-	9750 4750 9750 4850
 Wire Wire Line
 	9200 5050 9450 5050
 Wire Wire Line
@@ -519,8 +412,6 @@ Wire Wire Line
 Wire Wire Line
 	2500 6400 2600 6400
 Wire Wire Line
-	6300 1500 6300 1400
-Wire Wire Line
 	6100 2050 6300 2050
 Wire Wire Line
 	6950 1450 6800 1450
@@ -536,8 +427,6 @@ Wire Wire Line
 	9200 1650 9350 1650
 Wire Wire Line
 	9200 2100 9350 2100
-Wire Wire Line
-	6300 2000 6300 2050
 Connection ~ 6300 2050
 Wire Wire Line
 	2850 4250 2900 4250
@@ -554,18 +443,18 @@ Connection ~ 2850 2300
 Wire Wire Line
 	2850 2000 2750 2000
 $Comp
-L tca-rescue:R R15
+L Device:R R15
 U 1 1 53AA1B37
 P 3150 1250
 F 0 "R15" V 3230 1250 40  0000 C CNN
-F 1 "50k" V 3157 1251 40  0000 C CNN
+F 1 "50k" V 3150 1250 40  0000 C CNN
 F 2 "Resistors_SMD:R_0805" V 3080 1250 30  0001 C CNN
 F 3 "~" H 3150 1250 30  0000 C CNN
 	1    3150 1250
 	1    0    0    -1  
 $EndComp
 $Comp
-L tca-rescue:R R16
+L Device:R R16
 U 1 1 53AA1B5A
 P 3350 1250
 F 0 "R16" V 3430 1250 40  0000 C CNN
@@ -576,7 +465,7 @@ F 3 "~" H 3350 1250 30  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L tca-rescue:R R17
+L Device:R R17
 U 1 1 53AA1B60
 P 3550 1250
 F 0 "R17" V 3630 1250 40  0000 C CNN
@@ -587,7 +476,7 @@ F 3 "~" H 3550 1250 30  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L tca-rescue:R R18
+L Device:R R18
 U 1 1 53AA1B66
 P 3750 1250
 F 0 "R18" V 3830 1250 40  0000 C CNN
@@ -598,7 +487,7 @@ F 3 "~" H 3750 1250 30  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L tca-rescue:R R19
+L Device:R R19
 U 1 1 53AA1B6C
 P 3950 1250
 F 0 "R19" V 4030 1250 40  0000 C CNN
@@ -608,15 +497,7 @@ F 3 "~" H 3950 1250 30  0000 C CNN
 	1    3950 1250
 	1    0    0    -1  
 $EndComp
-Connection ~ 3750 1000
-Connection ~ 3550 1000
-Connection ~ 3350 1000
-Connection ~ 3150 1000
-Wire Wire Line
-	2950 1000 3150 1000
 Connection ~ 2950 1000
-Wire Wire Line
-	3150 1500 3150 1700
 Wire Wire Line
 	2750 2300 2850 2300
 Wire Wire Line
@@ -625,25 +506,15 @@ Wire Wire Line
 	2950 900  2950 1000
 Wire Wire Line
 	2950 2100 2750 2100
-Wire Wire Line
-	3350 1500 3350 1800
 Connection ~ 3350 1800
-Wire Wire Line
-	3550 1500 3550 1900
 Connection ~ 3550 1900
-Wire Wire Line
-	3750 1500 3750 2400
 Connection ~ 3750 2400
 Wire Wire Line
 	2750 2500 3950 2500
 Wire Wire Line
-	3950 2500 3950 1500
-Wire Wire Line
 	6250 6150 6250 6300
 Wire Wire Line
 	6250 6050 6250 6150
-Wire Wire Line
-	3500 4700 3950 4700
 Wire Wire Line
 	1900 4700 1900 4750
 Wire Wire Line
@@ -681,14 +552,6 @@ Wire Wire Line
 Wire Wire Line
 	2850 2300 2850 2650
 Wire Wire Line
-	3750 1000 3950 1000
-Wire Wire Line
-	3550 1000 3750 1000
-Wire Wire Line
-	3350 1000 3550 1000
-Wire Wire Line
-	3150 1000 3350 1000
-Wire Wire Line
 	2950 1000 2950 2100
 Wire Wire Line
 	3350 1800 4400 1800
@@ -717,8 +580,6 @@ Text Notes 7450 3450 0    59   ~ 12
 Processor\n
 Text Notes 7450 3600 0    50   ~ 0
 For ...?
-Text Notes 3650 5350 0    59   ~ 12
-Status & Reset
 Text Notes 3650 5800 0    50   ~ 0
 RESET1 - Switch to reset processor\nON1 - LED, lit when running\nERR1 - LED, lit if error\nFIN1 - LED, lit once finished\n(LED behaviour software dependant)
 Text Notes 4400 3850 0    50   ~ 0
@@ -727,10 +588,10 @@ Wire Wire Line
 	3950 4250 4100 4250
 Connection ~ 3950 4250
 $Comp
-L Device:LED_ALT ON1
+L Device:LED_ALT LED97
 U 1 1 5D5F29EB
 P 4600 6200
-F 0 "ON1" H 4600 6100 50  0000 C CNN
+F 0 "LED97" H 4600 6100 50  0000 C CNN
 F 1 "LED_ALT" H 4593 6036 50  0001 C CNN
 F 2 "LEDs:LED_0805" H 4600 6200 50  0001 C CNN
 F 3 "~" H 4600 6200 50  0001 C CNN
@@ -740,10 +601,10 @@ $EndComp
 Wire Wire Line
 	4750 6200 5000 6200
 $Comp
-L Device:LED_ALT ERR1
+L Device:LED_ALT LED98
 U 1 1 5D5FCE11
 P 4600 6500
-F 0 "ERR1" H 4600 6400 50  0000 C CNN
+F 0 "LED98" H 4600 6400 50  0000 C CNN
 F 1 "LED_ALT" H 4593 6336 50  0001 C CNN
 F 2 "LEDs:LED_0805" H 4600 6500 50  0001 C CNN
 F 3 "~" H 4600 6500 50  0001 C CNN
@@ -751,10 +612,10 @@ F 3 "~" H 4600 6500 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:LED_ALT FIN1
+L Device:LED_ALT LED99
 U 1 1 5D5FD6BB
 P 4600 6800
-F 0 "FIN1" H 4600 6700 50  0000 C CNN
+F 0 "LED99" H 4600 6700 50  0000 C CNN
 F 1 "LED_ALT" H 4593 6636 50  0001 C CNN
 F 2 "LEDs:LED_0805" H 4600 6800 50  0001 C CNN
 F 3 "~" H 4600 6800 50  0001 C CNN
@@ -765,4 +626,155 @@ Wire Wire Line
 	4750 6500 5000 6500
 Wire Wire Line
 	4750 6800 5000 6800
+$Comp
+L power:GND #PWR?
+U 1 1 5D64E712
+P 9900 4850
+AR Path="/5362FF20/5D64E712" Ref="#PWR?"  Part="1" 
+AR Path="/5D64E712" Ref="#PWR0108"  Part="1" 
+F 0 "#PWR0108" H 9900 4600 50  0001 C CNN
+F 1 "GND" H 9822 4733 50  0000 R BNN
+F 2 "" H 9900 4850 50  0001 C CNN
+F 3 "" H 9900 4850 50  0001 C CNN
+	1    9900 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L lpa96_symbols:RESONATEUR Y1
+U 1 1 52166DFA
+P 9500 4750
+F 0 "Y1" H 9520 4950 60  0000 C CNN
+F 1 "RESONATEUR" H 9930 4550 60  0000 C CNN
+F 2 "crystal_smd" H 9500 4750 60  0001 C CNN
+F 3 "" H 9500 4750 60  0000 C CNN
+	1    9500 4750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9750 4750 9900 4750
+Wire Wire Line
+	9900 4750 9900 4850
+$Comp
+L power:GND #PWR?
+U 1 1 5D662D71
+P 5000 7250
+AR Path="/5362FF20/5D662D71" Ref="#PWR?"  Part="1" 
+AR Path="/5D662D71" Ref="#PWR0109"  Part="1" 
+F 0 "#PWR0109" H 5000 7000 50  0001 C CNN
+F 1 "GND" H 4922 7133 50  0000 R BNN
+F 2 "" H 5000 7250 50  0001 C CNN
+F 3 "" H 5000 7250 50  0001 C CNN
+	1    5000 7250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D677902
+P 2600 6700
+AR Path="/5362FF20/5D677902" Ref="#PWR?"  Part="1" 
+AR Path="/5D677902" Ref="#PWR0110"  Part="1" 
+F 0 "#PWR0110" H 2600 6450 50  0001 C CNN
+F 1 "GND" H 2522 6583 50  0000 R BNN
+F 2 "" H 2600 6700 50  0001 C CNN
+F 3 "" H 2600 6700 50  0001 C CNN
+	1    2600 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D6834A4
+P 2850 2650
+AR Path="/5362FF20/5D6834A4" Ref="#PWR?"  Part="1" 
+AR Path="/5D6834A4" Ref="#PWR0111"  Part="1" 
+F 0 "#PWR0111" H 2850 2400 50  0001 C CNN
+F 1 "GND" H 2772 2533 50  0000 R BNN
+F 2 "" H 2850 2650 50  0001 C CNN
+F 3 "" H 2850 2650 50  0001 C CNN
+	1    2850 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D684D23
+P 1900 4750
+AR Path="/5362FF20/5D684D23" Ref="#PWR?"  Part="1" 
+AR Path="/5D684D23" Ref="#PWR0112"  Part="1" 
+F 0 "#PWR0112" H 1900 4500 50  0001 C CNN
+F 1 "GND" H 1822 4633 50  0000 R BNN
+F 2 "" H 1900 4750 50  0001 C CNN
+F 3 "" H 1900 4750 50  0001 C CNN
+	1    1900 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D689A60
+P 6250 6300
+AR Path="/5362FF20/5D689A60" Ref="#PWR?"  Part="1" 
+AR Path="/5D689A60" Ref="#PWR0113"  Part="1" 
+F 0 "#PWR0113" H 6250 6050 50  0001 C CNN
+F 1 "GND" H 6172 6183 50  0000 R BNN
+F 2 "" H 6250 6300 50  0001 C CNN
+F 3 "" H 6250 6300 50  0001 C CNN
+	1    6250 6300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 1400 6300 1600
+Wire Wire Line
+	6300 1900 6300 2050
+Wire Wire Line
+	2950 1000 3950 1000
+Wire Wire Line
+	3150 1000 3150 1100
+Wire Wire Line
+	3150 1400 3150 1700
+Wire Wire Line
+	3350 1000 3350 1100
+Wire Wire Line
+	3350 1400 3350 1800
+Wire Wire Line
+	3550 1000 3550 1100
+Wire Wire Line
+	3550 1400 3550 1900
+Wire Wire Line
+	3750 1000 3750 1100
+Wire Wire Line
+	3750 1400 3750 2400
+Wire Wire Line
+	3950 1000 3950 1100
+Wire Wire Line
+	3950 1400 3950 2500
+Wire Wire Line
+	3600 6200 3900 6200
+Wire Wire Line
+	4200 6200 4450 6200
+Wire Wire Line
+	3600 6500 3900 6500
+Wire Wire Line
+	4200 6500 4450 6500
+Wire Wire Line
+	3600 6800 3900 6800
+Wire Wire Line
+	4200 6800 4450 6800
+Wire Wire Line
+	4550 7550 4750 7550
+Wire Wire Line
+	4100 7550 4250 7550
+Connection ~ 3500 4700
+Text Notes 3650 5350 0    59   ~ 12
+Status & Reset
+Wire Wire Line
+	3500 4700 3950 4700
+$Comp
+L tca-rescue:C C5
+U 1 1 535704C8
+P 3950 4500
+F 0 "C5" H 3950 4600 40  0000 L CNN
+F 1 "10uF" H 3956 4415 40  0000 L CNN
+F 2 "Capacitors_SMD:C_1206" H 3988 4350 30  0001 C CNN
+F 3 "~" H 3950 4500 60  0000 C CNN
+	1    3950 4500
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

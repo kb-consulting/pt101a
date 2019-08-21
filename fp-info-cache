@@ -1,4 +1,4 @@
-134711105269187
+134711179368137
 Air_Coils_SML_NEOSID
 Neosid_Air-Coil_SML_1turn_HDM0131A
 
@@ -48201,21 +48201,21 @@ SolderWirePad_single_SMD_5x10mm
 0
 0
 0
-tca_footprints
+lpa96_footprints
 TLC5941_PWP_28
 
 
 0
 29
 29
-tca_footprints
+lpa96_footprints
 VLDx1232G
 Diode, Small Outline Diode (SOD); 2.30 mm L X 2.30 mm W X 3.02 mm H body
 
 0
 2
 2
-tca_footprints
+lpa96_footprints
 example_heatsink_14x14x14mm
 http://www.aavid.eu/products/standard/tv5g
 Heatsink TV5G TO-220 Horizontal 
