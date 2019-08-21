@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name tca-rescue)(type Legacy)(uri ${KIPRJMOD}/tca-rescue.lib)(options "")(descr ""))
+  (lib (name lpa96_symbols)(type Legacy)(uri ${KIPRJMOD}/symbols/lpa96_symbols.lib)(options "")(descr ""))
 )

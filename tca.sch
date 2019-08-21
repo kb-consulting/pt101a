@@ -42,7 +42,7 @@ F 3 "" H 2850 2650 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L tca-rescue:SD_CARD U1
+L lpa96_symbols:SD_CARD U1
 U 1 1 5358AEF9
 P 2350 1900
 F 0 "U1" H 2100 1600 60  0000 C CNN
@@ -75,7 +75,7 @@ F 3 "~" H 2200 4500 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L tca-rescue:LD1117S50 U2
+L lpa96_symbols:LD1117S50 U2
 U 1 1 5357046B
 P 3500 4300
 F 0 "U2" H 3650 4104 60  0000 C CNN
@@ -142,7 +142,7 @@ $EndComp
 Text Label 3900 7150 0    60   ~ 0
 RST
 $Comp
-L tca-rescue:SW_PUSH RESET1
+L lpa96_symbols:SW_PUSH RESET1
 U 1 1 5356E35F
 P 4450 7150
 F 0 "RESET1" H 4450 7300 50  0000 C CNN
@@ -168,7 +168,7 @@ F 3 "" H 9750 4850 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L tca-rescue:RESONATEUR Y1
+L lpa96_symbols:RESONATEUR Y1
 U 1 1 52166DFA
 P 9500 4750
 F 0 "Y1" H 9520 4950 60  0000 C CNN
@@ -230,7 +230,7 @@ F 3 "" H 6250 6300 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L tca-rescue:ATMEGA328-A IC1
+L lpa96_symbols:ATMEGA328-A IC1
 U 1 1 52150E25
 P 7700 4950
 F 0 "IC1" H 6950 6200 40  0000 L BNN
@@ -298,7 +298,7 @@ $EndComp
 Text Label 4100 4250 0    60   ~ 0
 VCC
 $Comp
-L tca-rescue:CONN_2 P1
+L lpa96_symbols:CONN_2 P1
 U 1 1 5213FDDC
 P 1450 4500
 F 0 "P1" V 1400 4500 40  0000 C CNN
@@ -309,7 +309,7 @@ F 3 "" H 1450 4500 60  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L tca-rescue:CONN_3X2 P2
+L lpa96_symbols:CONN_3X2 P2
 U 1 1 5213FCAA
 P 2100 6550
 F 0 "P2" H 2100 6800 50  0000 C CNN
@@ -722,7 +722,7 @@ Status & Reset
 Text Notes 3650 5800 0    50   ~ 0
 RESET1 - Switch to reset processor\nON1 - LED, lit when running\nERR1 - LED, lit if error\nFIN1 - LED, lit once finished\n(LED behaviour software dependant)
 Text Notes 4400 3850 0    50   ~ 0
-TODO major:\nrestructure firmware\ncheck if filled copper causes any issues (keepout notch for processor? SD card?)\n\nTODO minor:\nAdd annotation text\nSort out libraries\nAdd BOM info to design (+ choose new part for C5)\nNAME nets to make easier!\nFix DRCs\nFix ERCs
+TODO major:\nrestructure firmware\ncheck if filled copper causes any issues (keepout notch for processor? SD card?)\n\nTODO minor:\nAdd annotation text\nSort out libraries\nAdd BOM info to design (+ choose new part for C5)\nNAME nets to make easier!\nFix DRCs\nFix ERCs\nchange LD1117S33 symbol part to match
 Wire Wire Line
 	3950 4250 4100 4250
 Connection ~ 3950 4250
