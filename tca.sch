@@ -722,7 +722,7 @@ Status & Reset
 Text Notes 3650 5800 0    50   ~ 0
 RESET1 - Switch to reset processor\nON1 - LED, lit when running\nERR1 - LED, lit if error\nFIN1 - LED, lit once finished\n(LED behaviour software dependant)
 Text Notes 4400 3850 0    50   ~ 0
-TODO major:\nrestructure firmware\ncheck if filled copper causes any issues (keepout notch for processor? SD card?)\n\nTODO minor:\nAdd annotation text\nSort out libraries\nAdd BOM info to design (+ choose new part for C5)\nNAME nets to make easier!\nFix DRCs\nFix ERCs\nchange LD1117S33 symbol part to match
+TODO major:\nrestructure firmware\ntidy silkscreen etc\nmanufacturing data\ndo all 3d models\nAdd BOM info to design (+ choose new part for C5)\nVCC LD1117\n\nTODO minor:\nAdd annotation text\nSort out libraries\nFix ERCs\nchange LD1117S33 symbol part to match
 Wire Wire Line
 	3950 4250 4100 4250
 Connection ~ 3950 4250
