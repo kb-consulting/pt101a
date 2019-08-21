@@ -1,5 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:tca-cache
+LIBS:lpa96-cache
 EELAYER 30 0
 EELAYER END
 $Descr USLetter 11000 8500
@@ -234,8 +234,8 @@ $EndComp
 $Sheet
 S 6950 1300 2250 1200
 U 5362FF20
-F0 "tlcs_1-6" 50
-F1 "tlcs_1-6.sch" 50
+F0 "lpa96_leds_drivers" 50
+F1 "lpa96_leds_drivers.sch" 50
 F2 "XLAT" I L 6950 1450 60 
 F3 "SCLK" I L 6950 1600 60 
 F4 "SIN" I L 6950 1750 60 
@@ -534,13 +534,13 @@ Wire Wire Line
 Wire Wire Line
 	3750 2400 4400 2400
 NoConn ~ 6950 2350
-Text Notes 1700 5700 0    59   ~ 12
+Text Notes 1600 5900 0    59   ~ 12
 Programming Header
 Text Notes 1650 3500 0    59   ~ 12
 Power Supply
 Text Notes 1650 3800 0    50   ~ 0
 5V Input Supply (VIN)\nVIN supplies LED grid\nRegulated 3.3V (VCC) supplies ICs
-Text Notes 1750 1100 0    59   ~ 12
+Text Notes 1850 1500 0    59   ~ 12
 SD Card Socket
 Text Notes 7550 900  0    59   ~ 12
 LED Circuitry
