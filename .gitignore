@@ -10,3 +10,4 @@
 libraries/*.bak
 libraries/*.bck
 rescue-backup/
+fp-info-cache
