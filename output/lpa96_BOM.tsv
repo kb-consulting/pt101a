@@ -1,4 +1,4 @@
-References	Qty	Description	MPN1	Manufacturer1	SKU1	Supplier1
+References	Qty	Description	MPN1	Manufacturer1	Digikey	Supplier1
 C1, C2, C6, C7, C8, C9, C10, C11	8	-20/+80% 50V Y5V SMD MLCC Capacitor 0805	CL21F104ZBCNNNC	Samsung	1276-1007-1-ND	Digikey
 C3, C4	2	20% 35V SMD Electrolytic Capacitor	UWT1V470MCL1GS	Nichicon	493-2202-1-ND	Digikey
 C5, C12	2	10% 25V X5R SMD MLCC Capacitor 1206	CL31A106KAHNNNE	Samsung	1276-1075-1-ND	Digikey
