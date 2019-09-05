@@ -1,7 +1,7 @@
 # LPA96 - 96 Well Light Plate Apparatus (LPA) PCB
 ### Derived from original Tabor Lab designs from Rice University, with thermal and other improvements
 This version uses a single blue LED for each of the 96 wells, and aims to solve the thermal problems with the TaborLab 96well design (dual LED per well), which was itself derived from the original 24well design (The latest 24well design has since diverged, to what is now available on GitHub).  
-This version has been redesigned by Kevin Bibby, commisioned by Dr Jenny Molloy - University of Cambridge, Department of Chemical Engineering and Biotechnology.  
+This version has been redesigned by Kevin Bibby (https://www.linkedin.com/in/kevinbibby/), commissioned by Dr Jenny Molloy - University of Cambridge / Cambridge Open Bioeconomy Lab.  
   
 Original 24well article: https://www.nature.com/articles/srep35363  
 Latest 24well Github (including chassis and other firmware files): https://github.com/taborlab/LPA-hardware  
