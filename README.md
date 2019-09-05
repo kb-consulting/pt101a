@@ -6,6 +6,8 @@ This version has been redesigned by Kevin Bibby, commisioned by Dr Jenny Molloy 
 Original 24well article: https://www.nature.com/articles/srep35363  
 Latest 24well Github (including chassis and other firmware files): https://github.com/taborlab/LPA-hardware  
 
+![PCB TOP](output/lpa96_top.png?raw=true)
+![PCB BOTTOM](output/lpa96_bottom.png?raw=true)
 
 LPA96 v2.1  
 05/09/2019 Kevin Bibby  
