@@ -1,3 +1,28 @@
+LPA96
+96well Light Plate Apparatus (LPA) PCB, derived from original Tabor Lab designs from Rice University
+This version uses a single blue LED for each of the 96 wells, and aims to solve the thermal problems with the original TaborLab 96well design (dual LED per well).
+This version has been redesigned by Kevin Bibby, commisioned by Dr Jenny Molloy - University of Cambridge, Department of Chemical Engineering and Biotechnology.
+
+Original 24well article: https://www.nature.com/articles/srep35363
+Latest 24well Github (including chassis and other firmware files): https://github.com/taborlab/LPA-hardware
+
+
+LPA96 v2.1
+05/09/2019 Kevin Bibby
+-------------------------
+Added all part info from original 24well LPA 'Nature' article (Supplementary Information, Table S1).
+Part info uses "Description", "Manufacturer1", "MPN1", "Vendor1" and "SKU1" part fields in KiCAD.
+Added files necessary to work with Kitspace.org for sharing the design and ordering parts easily.
+changed BOM info to reflect new LED chosen for this 96well version
+changed BOM info for C5,C12 - chosen part for new 1206 case size (was 0805 in v1.1).
+changed P2 to 2x3way exact part (2x3way) rather than 40way breakable header.
+changed R15-R19 from 50k to 47k to match part in BOM
+changed P1 and P2 library part 3D models to match part from BOM
+Note: P1 fouls on nearby hole, issue from original LPA96 design only just discovered after correct part info added
+Fixed U2 SOT223 3D model to use modern STEP model instead of old .wrl
+Updated footprints to use KiCAD5 latest (some changed since v2.0 e.g. rounded rectangle pads for commodity C / R footprints)
+
+
 LPA96 v2.0
 22/08/2019 Kevin Bibby
 -------------------------
