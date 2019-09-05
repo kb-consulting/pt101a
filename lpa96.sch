@@ -228,7 +228,7 @@ F 0 "IC1" H 6950 6200 40  0000 L BNN
 F 1 "ATMEGA328-A" H 8100 3550 40  0000 L BNN
 F 2 "lpa96_footprints:TQFP32_FIXED" H 7700 4950 30  0001 C CIN
 F 3 "" H 7700 4950 60  0000 C CNN
-F 4 "AVR ATmega Microcontroller IC 8-Bit 20MHz" H 7700 4950 50  0000 C CNN "Description"
+F 4 "AVR ATmega Microcontroller IC 8-Bit 20MHz" H 7700 4950 50  0001 C CNN "Description"
 F 5 "Microchip" H 7700 4950 50  0001 C CNN "Manufacturer1"
 F 6 "Digikey" H 7700 4950 50  0001 C CNN "Vendor1"
 F 7 "ATMEGA328-AU" H 7700 4950 50  0001 C CNN "MPN1"
