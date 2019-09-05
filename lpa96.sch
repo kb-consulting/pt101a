@@ -6,8 +6,8 @@ $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 2
 Title "96-well Light Plate Apparatus (LPA)"
-Date "2019-08-22"
-Rev "2.0"
+Date "2019-09-05"
+Rev "2.1"
 Comp "Authors: Tabor lab/Evan Olson/Sebastian Castillo/Open Bioeconomy Lab/Kevin Bibby"
 Comment1 ""
 Comment2 ""

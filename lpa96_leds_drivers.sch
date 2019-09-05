@@ -6,8 +6,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 2
 Title "96-well Light Plate Apparatus (LPA), Blue 465nm"
-Date "2019-08-22"
-Rev "2.0"
+Date "2019-09-05"
+Rev "2.1"
 Comp "Authors: Tabor lab/Evan Olson/Sebastian Castillo/Open Bioeconomy Lab/Kevin Bibby"
 Comment1 ""
 Comment2 ""
